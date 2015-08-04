@@ -1,0 +1,2 @@
+http://hr.tencent.com/position.php?keywords=&tid=87
+http://talent.baidu.com/baidu/web/templet1000/index/corpwebPosition1000baidu!getPostListByConditionBaidu?positionType=0/1227/10002&brandCode=1&releaseTime=0&trademark=0&useForm=0&recruitType=2&lanType=&workPlaceCode=&keyWord=&request_locale=zh_CN

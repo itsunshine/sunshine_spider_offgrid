@@ -1,0 +1,25 @@
+<div class="detail-box">
+				<h4 class="detail-title">$!title 岗位职责：</h4>
+				<p class="detail-content">
+				  #set($idx = 0)
+				  #foreach( $cd in $rpList )
+					#set($idx = $!idx + 1)
+					$idx：$cd <br />
+				#end
+				</p>
+				<h4 class="detail-title">$!title 岗位要求：</h4>
+				<p class="detail-content">
+				 #set($jdx = 0)
+				 #foreach( $cd in $cdList )
+				 	#set($jdx = $!jdx + 1)
+					$jdx：$cd <br />
+				#end
+								</p>
+				<p>
+				&nbsp;
+				</p>
+				<p>&nbsp;</p>
+				<p class="detail-content">
+				  
+								</p>
+							</div>

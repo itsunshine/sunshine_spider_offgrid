@@ -1,0 +1,2 @@
+#-s D:/workspace/spiderServiceUtil/spider/seeds.txt -d D:\workspace\spiderServiceUtil\src\com\boliao\sunshine\properties\lastDateRecord.properties
+-r

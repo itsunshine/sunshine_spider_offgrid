@@ -1,0 +1,44 @@
+<div id="hrs_jobDetail">
+            <dl class="hrs_jobInfo">
+               	
+	              <dt>所属部门:</dt>
+	              <dd>百度</dd>
+              
+              <dt>工作地点:</dt>
+              <dd><font title="北京市">北京市</font></dd>
+              <dt>招聘人数:</dt>
+              <dd>
+                
+                
+                  1
+                
+              </dd>
+              <dt>职位性质:</dt>
+              <dd><font title="技术">技术</font></dd>
+            </dl>
+            <dl class="hrs_jobDuty">
+              <dt>工作职责：</dt>
+              <div style="word-break:break-all;word-spacing: normal;">
+                -负责文库转换系统的开发与维护，包括Pdf、Office、Epub等主流文档的格式解析与转换
+<br>-负责技术问题的攻关
+              </div>
+            </dl>
+            <dl class="hrs_jobRequire">
+              <dt>职位要求：</dt>
+              <div style="word-break:break-all;word-spacing: normal;">
+                -熟悉Pdf、Office、Epub等主流文档的格式，有文档解析、转换的经验
+<br>-本科或以上计算机相关专业学历，两年以上相关工作经验 
+<br>-精通PHP或者C/C++编程语言 
+<br>-熟练使用MySQL或Oracle数据库，了解SQL优化方法 
+<br>-熟悉Linux日常工作环境，掌握常用命令 
+<br>-至少会使用一种脚本语言，包括但不局限于Shell、Ruby、Groovy、Python，能够在日常工作中使用脚本简化工作 
+<br>-善于学习和运用新知识，具有良好的分析和解决问题能力 
+<br>-具有良好的团队合作精神和积极主动的沟通意识
+              </div>
+            </dl>
+            
+            <div>
+              <input type="button" value="申请岗位" id="hrs_applyJob">
+              <input type="button" value="收藏岗位" id="hrs_favoriteJob">
+            </div>
+          </div>
