@@ -2,6 +2,8 @@ package com.boliao.sunshine.parsers;
 
 import java.util.List;
 
+import com.boliao.sunshine.biz.model.JobDemandArt;
+
 /**
  * 网页解析服务接口
  * 
@@ -11,28 +13,12 @@ import java.util.List;
 public interface BaseParser {
 
 	/**
-	 * 根据htmlContent抽取，要抓取网页内容的url
-	 * 
-	 * @param htmlContent
-	 * @return
-	 */
-	public String parseContent(String htmlContent);
-
-	/**
-	 * 根据htmlContent,抽取下一页的链接地址
-	 * 
-	 * @param htmlContent
-	 * @return
-	 */
-	public String parsePageContent(String htmlContent);
-
-	/**
 	 * 根据content内容，获取链接
 	 * 
 	 * @param content
 	 * @return
 	 */
-	public List<String> getLinks(String content);
+	public List<JobDemandArt> getLinks(String content);
 
 	/**
 	 * 获得页码的内容
@@ -43,10 +29,23 @@ public interface BaseParser {
 	public List<String> getPageLinks(String content);
 
 	/**
-	 * 获得最近一篇文章的日期
+	 * 获得上次最新的日期
 	 * 
-	 * @param content
-	 * @return 日期格式的字符串
+	 * @return
 	 */
-	public void getRecentDate(String content);
+	public String getLastDateStr();
+
+	/**
+	 * 获得最新日期
+	 * 
+	 * @return
+	 */
+	public String getMaxDateStr();
+
+	/**
+	 * 获取站点名字常量
+	 * 
+	 * @return
+	 */
+	public String getSite();
 }

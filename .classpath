@@ -8,13 +8,9 @@
 	<classpathentry kind="lib" path="lib/commons-codec-1.7.jar"/>
 	<classpathentry kind="lib" path="lib/commons-collections-3.2.1.jar"/>
 	<classpathentry kind="lib" path="lib/commons-httpclient-3.1.jar"/>
-	<classpathentry kind="lib" path="lib/commons-io-2.0.1.jar"/>
-	<classpathentry kind="lib" path="lib/commons-lang-2.6.jar"/>
-	<classpathentry kind="lib" path="lib/commons-logging-1.1.1.jar"/>
-	<classpathentry kind="lib" path="lib/commons-logging.jar"/>
 	<classpathentry kind="lib" path="lib/commons-pool-1.5.4.jar"/>
 	<classpathentry kind="lib" path="lib/ezmorph-1.0.6.jar"/>
-	<classpathentry kind="lib" path="lib/filterbuilder.jar"/>
+	<classpathentry kind="lib" path="lib/filterbuilder.jar" sourcepath="D:/Lib/htmllexer.src.zip"/>
 	<classpathentry kind="lib" path="lib/fit.jar"/>
 	<classpathentry kind="lib" path="lib/htmllexer.jar"/>
 	<classpathentry kind="lib" path="lib/htmlparser.jar"/>
@@ -23,9 +19,14 @@
 	<classpathentry kind="lib" path="lib/httpmime-4.0.1.jar"/>
 	<classpathentry kind="lib" path="lib/json-lib-2.4-jdk15.jar"/>
 	<classpathentry kind="lib" path="lib/junit.jar"/>
-	<classpathentry kind="lib" path="lib/log4j-1.2.16.jar"/>
 	<classpathentry kind="lib" path="lib/sitecapturer.jar"/>
 	<classpathentry kind="lib" path="lib/thumbelina.jar"/>
-	<classpathentry combineaccessrules="false" kind="src" path="/sunshine-common"/>
+	<classpathentry kind="lib" path="lib/velocity-1.7-dep.jar" sourcepath="D:/Lib/velocity-1.7.zip"/>
+	<classpathentry kind="lib" path="lib/velocity-1.7.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/common/lib/commons-io-2.0.1.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/common/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/common/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/workspace/common/lib/log4j-1.2.16.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/common"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

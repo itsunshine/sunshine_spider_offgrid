@@ -3,10 +3,15 @@
  */
 package com.boliao.sunshine.config;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.FileReader;
 import java.io.IOException;
-import java.util.HashSet;
+import java.net.URL;
 import java.util.Properties;
-import java.util.Set;
+
+import org.apache.commons.lang.StringUtils;
 
 /**
  * 配置类，负责解析配置文件
@@ -16,36 +21,52 @@ import java.util.Set;
  */
 public class ConfigService {
 
-	Properties webPro = new Properties();
-	Properties configPros = new Properties();
-	String seeds[] = null;
-	Set<String> webSites = null;
+	Properties htmlTmpParseconfigPros = new Properties();
+	Properties lastDateRecordPros = new Properties();
 	static ConfigService configService = new ConfigService();
+	// properties文件的存放路径
+	private static boolean isOnGrid;
+
+	// 本地指定配置文件路径模式
+	public static boolean isLocalSpecifiedMode;
+
+	// grid下配置文件路径
+	private static final String defaultTmpCfgFile = "com/boliao/sunshine/properties/htmlParseTempConfig.properties";
+	private static final String defaultLastDateRecordFile = "com/boliao/sunshine/properties/lastDateRecord.properties";
+
+	// 本地文件夹下的路径
+	private String localHtmlTempCfg;// 暂时无用
+	private String localLastDateRecord;
 
 	/**
 	 * 加载配置文件
 	 */
-	private void init() {
+	public void init() {
 		try {
-			// 加载要抓取的网站
-			webPro
-					.load(ConfigService.class
-							.getClassLoader()
-							.getResourceAsStream(
-									"com/boliao/sunshine/properties/website.properties"));
 			// 加载解析该网站的相关配置
-			configPros
-					.load(ConfigService.class
-							.getClassLoader()
-							.getResourceAsStream(
-									"com/boliao/sunshine/properties/config.properties"));
+			if (isOnGrid) {
+				FileReader fr = new FileReader("htmlParseTempConfig.properties");
+				htmlTmpParseconfigPros.load(fr);
+				fr.close();
+				fr = new FileReader("lastDateRecord.properties");
+				lastDateRecordPros.load(fr);
+				fr.close();
+			} else if (isLocalSpecifiedMode) {
+				htmlTmpParseconfigPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
+				FileReader fr = new FileReader(localLastDateRecord);
+				lastDateRecordPros.load(fr);
+				fr.close();
+			} else {
+				htmlTmpParseconfigPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
+				lastDateRecordPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultLastDateRecordFile));
+			}
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
 	private ConfigService() {
-		init();
 	}
 
 	/**
@@ -65,61 +86,106 @@ public class ConfigService {
 	}
 
 	/**
-	 * 获得种子url
-	 * 
-	 * @return
-	 */
-	public String[] getSeeds() {
-		Set<Object> keySet = webPro.keySet();
-		if (seeds != null) {
-			return seeds;
-		}
-		seeds = new String[keySet.size()];
-		Object[] keys = keySet.toArray();
-		for (int i = 0; i < keySet.size(); i++) {
-			String key = (String) keys[i];
-			String seed = webPro.getProperty(key.toString());
-			seeds[i] = seed;
-		}
-		return seeds;
-	}
-
-	/**
-	 * 获取网站，所有的键值
-	 * 
-	 * @return
-	 */
-	public Set<String> getWebSit() {
-		if (webSites != null && webSites.size() != 0) {
-			return webSites;
-		}
-		webSites = new HashSet<String>();
-		for (Object key : webPro.keySet()) {
-			webSites.add(key.toString());
-		}
-		return webSites;
-	}
-
-	/**
 	 * 根据name取得value的值
 	 * 
-	 * @param name
+	 * @param key
 	 * @param defaultValue
 	 * @return
 	 */
-	public String getString(String name, String defaultValue) {
-		Object val = webPro.get(name);
-		if (val == null) {
-			val = configPros.get(name);
-			if (val == null)
-				return defaultValue;
-		}
+	public String getFlagString(String key, String defaultValue) {
+		Object val = htmlTmpParseconfigPros.get(key);
+		if (val == null)
+			return defaultValue;
 		return val.toString();
+	}
+
+	/***
+	 * 取得对应key的最后日期
+	 * 
+	 * @param key
+	 * @param defaultValue
+	 * @return
+	 */
+	public String getLastDateRecord(String key, String defaultValue) {
+		Object val = lastDateRecordPros.get(key);
+		if (val == null)
+			return defaultValue;
+		return val.toString();
+	}
+
+	/**
+	 * 清除缓存的配置
+	 */
+	public void clearProperties() {
+		lastDateRecordPros.clear();
+		htmlTmpParseconfigPros.clear();
+	}
+
+	/**
+	 * @param isOnGrid
+	 *            the isOnGrid to set
+	 */
+	public static void setOnGrid(boolean onGrid) {
+		isOnGrid = onGrid;
+	}
+
+	/***
+	 * 将最新的职位日期，记录到properties文件上
+	 * 
+	 * @param key
+	 * @param dateStr
+	 */
+	public void flushRecentRecord(String key, String dateStr) {
+		if (StringUtils.isNotBlank(key) && StringUtils.isNotBlank(dateStr)) {
+			lastDateRecordPros.put(key, dateStr);
+		}
+	}
+
+	/**
+	 * 将抓取的最新日期持久化到硬盘上
+	 */
+	public void storeRecentDate(String filePath) {
+		try {
+			// 如果传入的文件路径是空，就存储在默认记录最新日期的文件里
+			if (StringUtils.isBlank(filePath)) {
+				URL url = ConfigService.class.getClassLoader().getResource(this.defaultLastDateRecordFile);
+				filePath = url.getFile();
+			}
+			File file = new File(filePath);
+			if (file.exists()) {
+				file.delete();
+			}
+			FileOutputStream fos = new FileOutputStream(filePath);
+			lastDateRecordPros.store(fos, null);
+			fos.flush();
+			fos.close();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
+	/**
+	 * @param localHtmlTempCfg
+	 *            the localHtmlTempCfg to set
+	 */
+	public void setLocalHtmlTempCfg(String localHtmlTempCfg) {
+		this.localHtmlTempCfg = localHtmlTempCfg;
+	}
+
+	/**
+	 * @param localLastDateRecord
+	 *            the localLastDateRecord to set
+	 */
+	public void setLocalLastDateRecord(String localLastDateRecord) {
+		this.localLastDateRecord = localLastDateRecord;
 	}
 
 	public static void main(String[] args) {
 		ConfigService configService = new ConfigService();
 		configService.init();
+		configService.flushRecentRecord("a", "sdfaeds");
+		configService.storeRecentDate(null);
 	}
-
 }

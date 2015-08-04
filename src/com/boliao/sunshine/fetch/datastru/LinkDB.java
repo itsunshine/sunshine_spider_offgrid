@@ -1,7 +1,9 @@
 package com.boliao.sunshine.fetch.datastru;
 
-import java.util.HashSet;
-import java.util.Set;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.BlockingQueue;
+
+import org.apache.commons.lang.StringUtils;
 
 /**
  * 用来保存已经访问过 Url 和待访问的 Url 的类
@@ -9,11 +11,11 @@ import java.util.Set;
 public class LinkDB {
 
 	// 已访问的 url 集合
-	private static Set<String> visitedUrl = new HashSet<String>();
+	private static BlockingQueue<String> visitedUrl = new ArrayBlockingQueue<String>(1000);
 	// 待访问的 url 集合
-	private static Queue<String> unVisitedUrl = new Queue<String>();
+	private static BlockingQueue<String> unVisitedUrl = new ArrayBlockingQueue<String>(300);
 
-	public static Queue<String> getUnVisitedUrl() {
+	public static BlockingQueue<String> getUnVisitedUrl() {
 		return unVisitedUrl;
 	}
 
@@ -26,26 +28,33 @@ public class LinkDB {
 	}
 
 	public static String unVisitedUrlDeQueue() {
-		return unVisitedUrl.deQueue();
+		try {
+			return unVisitedUrl.take();
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		return null;
 	}
 
 	// 保证每个 url 只被访问一次
 	public static void addUnvisitedUrl(String url) {
-		if (url != null && !url.trim().equals("") && !visitedUrl.contains(url)
-				&& !unVisitedUrl.contians(url))
-			unVisitedUrl.enQueue(url);
+		if (StringUtils.isNotBlank(url) && !visitedUrl.contains(url) && !unVisitedUrl.contains(url)) {
+			unVisitedUrl.add(url);
+		}
+
 	}
 
 	public static int getVisitedUrlNum() {
 		return visitedUrl.size();
 	}
 
+	// 返回未访问链表是否为空，根据未访问链表的大小来判断
 	public static boolean unVisitedUrlsEmpty() {
-		return unVisitedUrl.empty();
+		return (unVisitedUrl.size() == 0);
 	}
 
 	public static void clean() {
-		visitedUrl = new HashSet<String>();
-		unVisitedUrl = new Queue<String>();
+		visitedUrl.clear();
+		unVisitedUrl.clear();
 	}
 }
