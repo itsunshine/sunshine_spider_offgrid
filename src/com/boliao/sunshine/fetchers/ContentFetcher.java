@@ -373,7 +373,16 @@ public class ContentFetcher {
 		@Override
 		public void run() {
 			try {
-				collect(jobDemandArt);
+				// 如果没有内容，就去抓取内容
+				if (StringUtils.isBlank(jobDemandArt.getContent())) {
+					collect(jobDemandArt);
+				}
+				// 如果想阿里网页一样，已经有了内容，就直接存入文件
+				else {
+					JSONObject obj = JSONObject.fromObject(jobDemandArt);
+					saveConUrlWorker.addStoredContent(obj.toString());
+				}
+
 			} catch (Exception e) {
 				LogUtil.error(errorLogger, "抓取url出错，请详查，url：" + jobDemandArt.getSource(), e);
 			} finally {

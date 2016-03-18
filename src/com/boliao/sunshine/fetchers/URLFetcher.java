@@ -32,7 +32,8 @@ import com.boliao.sunshine.config.ConfigService;
 import com.boliao.sunshine.constants.CommonConstants;
 import com.boliao.sunshine.fetch.datastru.LinkDB;
 import com.boliao.sunshine.main.SpiderLauncher;
-import com.boliao.sunshine.parsers.BaiduHRParser;
+import com.boliao.sunshine.parsers.ALIbabaHRParser2;
+import com.boliao.sunshine.parsers.BaiduHRParser2;
 import com.boliao.sunshine.parsers.BaseParser;
 import com.boliao.sunshine.parsers.TencentHRParser;
 
@@ -106,7 +107,8 @@ public class URLFetcher {
 	 */
 	private URLFetcher() {
 		parserMap.put(CommonConstants.TENCENTHR, TencentHRParser.getInstance());
-		parserMap.put(CommonConstants.BAIDUHR, BaiduHRParser.getInstance());
+		parserMap.put(CommonConstants.BAIDUHR, BaiduHRParser2.getInstance());
+		parserMap.put(CommonConstants.TAOBAOHR, ALIbabaHRParser2.getInstance());
 		executor = new ThreadPoolExecutor(THREADE_POOL_SIZE, THREADE_POOL_SIZE, 10L, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10),
 				new ThreadPoolExecutor.CallerRunsPolicy());
 		for (int i = 0; i < THREADE_POOL_SIZE; i++) {
@@ -254,7 +256,7 @@ public class URLFetcher {
 	 * @return
 	 */
 	private boolean isMatchCondition() {
-		if (!LinkDB.unVisitedUrlsEmpty() && LinkDB.getVisitedUrlNum() <= 1000) {
+		if (!LinkDB.unVisitedUrlsEmpty()) {
 			return true;
 		}
 		return false;
@@ -269,8 +271,11 @@ public class URLFetcher {
 		try {
 			counter = new CountDownLatch(caculator.get());
 			counter.await();
+			// 如果url工作线程，工作完后，未访问队列里依然是空的，就返回false；
 			if (isMatchCondition()) {
-				counter = null;
+				synchronized (this) {
+					counter = null;
+				}
 				return true;
 			}
 			return false;
@@ -285,8 +290,10 @@ public class URLFetcher {
 	 */
 	private void counterDown() {
 		synchronized (this) {
-			LogUtil.info(logger, "the counter number is : " + counter.getCount());
-			counter.countDown();
+			if (counter != null) {
+				counter.countDown();
+				LogUtil.info(logger, "the counter number is : " + counter.getCount());
+			}
 		}
 	}
 
@@ -354,20 +361,36 @@ public class URLFetcher {
 	 * @throws Exception
 	 */
 	private void fetchUrl(String visitUrl, ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
+
+		BaseParser parser = queryParser(visitUrl);
+
 		// 抓取到的网页内容
-		String htmlContent = HttpUtil.getHtmlContent(visitUrl);
+		String htmlContent = null;
+		if (CommonConstants.OBTAIN_HTML_PARSERS.contains(parser.getClass())) {
+			htmlContent = HttpUtil.getHtmlContent(visitUrl);
+		} else {
+			htmlContent = HttpUtil.doPost(visitUrl, null, "utf-8");
+		}
 
 		// 如果没有抓取到网页内容则跳过
 		if (StringUtils.isBlank(htmlContent)) {
-			throw new RuntimeException("抓取到的网页内容，空字符串");
+			throw new RuntimeException("抓取到的网页内容，空字符 串");
 		}
 
-		BaseParser parser = queryParser(visitUrl);
 		URL url = new URL(visitUrl);
 		// 必须先抓取内容的url，再抓page的url
 		List<JobDemandArt> contentLinks = parser.getLinks(htmlContent);
+		int tryTime = 3;
+		while ((contentLinks == null || contentLinks.isEmpty()) && (tryTime-- > 0)) {
+			// 抓取到的网页内容
+			htmlContent = HttpUtil.getHtmlContent(visitUrl);
+			parser = queryParser(visitUrl);
+			// 必须先抓取内容的url，再抓page的url
+			contentLinks = parser.getLinks(htmlContent);
+		}
 		if (contentLinks == null || contentLinks.isEmpty()) {
-			return;
+			logger.info("the fetched contentLinks are null...");
+			throw new RuntimeException("the contentLinks is null");
 		}
 
 		for (JobDemandArt jobDemandArt : contentLinks) {

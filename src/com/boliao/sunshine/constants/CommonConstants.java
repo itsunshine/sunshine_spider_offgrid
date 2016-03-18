@@ -5,6 +5,10 @@ package com.boliao.sunshine.constants;
 
 import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.HashSet;
+import java.util.Set;
+
+import com.boliao.sunshine.parsers.TencentHRParser;
 
 /**
  * 普通常量类
@@ -13,6 +17,7 @@ import java.text.SimpleDateFormat;
  * 
  */
 public class CommonConstants {
+
 	// 文件格式的日期字符串
 	public static final SimpleDateFormat filefmt = new SimpleDateFormat("yyyyMMdd");
 
@@ -21,6 +26,8 @@ public class CommonConstants {
 
 	// ITEYE host
 	public static final String ITEYE = "www.iteye.com";
+
+	// 腾讯招聘host
 	public static final String TENCENTHR = "hr.tencent.com";
 	public static final String BAIDUHR = "talent.baidu.com";
 	public static final String TAOBAOHR = "job.alibaba.com";
@@ -59,7 +66,9 @@ public class CommonConstants {
 	public static final String RECOVERY_SEEDS_DIR = "recovery" + File.separator + "temp" + File.separator;
 
 	// 上传网站的url地址
-	public static final String UPLOAD_URL = "http://localhost:8989/sunshine_new/views/upload.do";
+	// public static final String UPLOAD_URL =
+	// "http://localhost:8989/sunshine_new/views/upload.do";
+	public static final String UPLOAD_URL = "http://www.itsunshine.net/views/upload.do";
 
 	// 程序运行目录
 	public static final String USER_DIR = "user.dir";
@@ -81,4 +90,12 @@ public class CommonConstants {
 
 	// 将招聘页面里的若干，翻译成10
 	public static final int N_NUMBER = 10;
+
+	// 需要先获取html页面内容再解析的，parsers
+	public static Set<Class> OBTAIN_HTML_PARSERS = new HashSet<Class>();
+
+	// 加入需要准备html内容的parser
+	static {
+		OBTAIN_HTML_PARSERS.add(TencentHRParser.class);
+	}
 }

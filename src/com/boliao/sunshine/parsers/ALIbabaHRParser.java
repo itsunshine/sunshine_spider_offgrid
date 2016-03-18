@@ -26,7 +26,7 @@ import com.boliao.sunshine.utils.SpideContentUtil;
 import com.boliao.sunshine.utils.URLParserTool;
 
 /**
- * 百度招聘页面解析器
+ * 阿里巴巴招聘页面解析器
  * 
  * @author liaobo
  * 
@@ -101,7 +101,7 @@ public class ALIbabaHRParser implements BaseParser {
 		String content = parseContent(htmlContent);
 		// 如果解析出的内容为空，则返回空
 		if (StringUtils.isBlank(content)) {
-			throw new RuntimeException("百度招聘页面,html内容解析，出错。");
+			throw new RuntimeException("阿里招聘页面,html内容解析，出错。");
 		}
 		try {
 			content = ParseUtils.reomveTags(content, TableRow.class, "style", "display:none");

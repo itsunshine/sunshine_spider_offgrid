@@ -53,7 +53,7 @@ public class ContentExtractionFromBaiduHR extends BaseContentExtraction {
 	public static ContentExtractionFromBaiduHR contentExtractionFromBaiduHR = new ContentExtractionFromBaiduHR();
 
 	// 从招聘的内容细节中获取具体的文字内容
-	public static Pattern pattern = Pattern.compile("([\u0391-\uFFE5|\\w|\\/\\+,\\s]+)(\\s)*(\\<br\\>)?");
+	public static Pattern pattern = Pattern.compile("([\u0391-\uFFE5|\\w|\\/\\+,\\s|-]+)(\\s)*(\\<br\\>)?");
 
 	private ContentExtractionFromBaiduHR() {
 	}
@@ -148,7 +148,12 @@ public class ContentExtractionFromBaiduHR extends BaseContentExtraction {
 				jobDesc = StringHelperUtil.removeBlankWord(jobDesc);
 				Matcher m = pattern.matcher(jobDesc);
 				while (m.find()) {
-					rpList.add(m.group(1));
+					String str = m.group(1);
+					str = str.trim();
+					if (str.startsWith("-")) {
+						str = str.substring(1, str.length());
+					}
+					rpList.add(str);
 
 				}
 			}
@@ -158,7 +163,12 @@ public class ContentExtractionFromBaiduHR extends BaseContentExtraction {
 				jobDesc = StringHelperUtil.removeBlankWord(jobDesc);
 				Matcher m = pattern.matcher(jobDesc);
 				while (m.find()) {
-					cdList.add(m.group(1));
+					String str = m.group(1);
+					str = str.trim();
+					if (str.startsWith("-")) {
+						str = str.substring(1, str.length());
+					}
+					cdList.add(str);
 				}
 			}
 		}
@@ -185,11 +195,16 @@ public class ContentExtractionFromBaiduHR extends BaseContentExtraction {
 		// TableColumn.class, "id", "sharetitle");
 
 		String testStr = "-全面负责IDC机房基础设施运维及管理工作，确保数据中心安全、可靠、高效运行   <br>   -制定公司IDC基础设施运维管理制度、操作手册、应急管理流程和应急操作预案";
-		testStr = "具有2年以上设计开发经验，至少熟悉一种编程语言（PHP/Python/Java） ";
-		testStr = "精通Linux/Unix平台上的Java/C/C++编程，熟悉脚本编程（如Bashx, Python等）";
+		// testStr = "具有2年以上设计开发经验，至少熟悉一种编程语言（PHP/Python/Java） ";
+		// testStr = "3-5年行业研究类工作经验，有政府工作经验者优先";
 		Matcher m = pattern.matcher(testStr);
 		while (m.find()) {
-			System.out.println(m.group(1));
+			String str = m.group(1);
+			str = str.trim();
+			if (str.startsWith("-")) {
+				str = str.substring(1, str.length());
+			}
+			System.out.println(str);
 		}
 
 		// File file = new

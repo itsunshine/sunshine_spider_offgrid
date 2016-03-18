@@ -23,11 +23,10 @@ import org.apache.http.util.EntityUtils;
  */
 public class SendFile {
 
-	public static void main(String[] args) throws ClientProtocolException,
-			IOException {
-		uploadFile(
-				"http://localhost:8989/sunshine04/process/spider/fileUpload",
-				"D:/workspaceBoliao/spider/spider/20140221");
+	public static void main(String[] args) throws ClientProtocolException, IOException {
+		// uploadFile("http://www.itsunshine.net:8080/views/upload.do",
+		// "D:\\workspace\\sunshine\\corp.jobCorp");
+		uploadFile("http://www.itsunshine.net/views/upload.do", "D:\\workspace\\sunshine\\upload.docs");
 	}
 
 	/**
@@ -39,8 +38,7 @@ public class SendFile {
 	 * @throws ClientProtocolException
 	 * @throws IOException
 	 */
-	public static boolean uploadFile(String url, String filePath)
-			throws ClientProtocolException, IOException {
+	public static boolean uploadFile(String url, String filePath) throws ClientProtocolException, IOException {
 
 		HttpClient httpclient = new DefaultHttpClient();
 		// 请求处理页面
