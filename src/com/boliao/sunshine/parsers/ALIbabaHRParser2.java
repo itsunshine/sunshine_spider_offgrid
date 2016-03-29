@@ -13,9 +13,6 @@ import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
@@ -23,6 +20,9 @@ import com.boliao.sunshine.biz.model.JobDemandArt;
 import com.boliao.sunshine.config.ConfigService;
 import com.boliao.sunshine.constants.CommonConstants;
 import com.boliao.sunshine.utils.VelUtil;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 
 /**
  * 阿里巴巴招聘页面解析器
@@ -41,11 +41,14 @@ public class ALIbabaHRParser2 implements BaseParser {
 	// 百度招聘页面站点字符串常量
 	public final String SITE = "ALIBABAHR";
 
+	// 是否继续抓取的标识位
+	private boolean fetchFLag = true;
+
 	// 最新发布的招聘日期
 	private String maxDateStr = "";
 
 	// 从招聘的内容细节中获取具体的文字内容
-	public static Pattern pattern = Pattern.compile("([\u0391-\uFFE5|\\w|\\s|\\-|\\+|\\/]+)(\\<br\\/>)?");
+	public static Pattern pattern = Pattern.compile("([\u0391-\uFFE5|\\w|\\s|\\-|\\+|\\/|(|)]+)(\\<br\\/>)?");
 
 	// 过滤抓取内容用的charSet
 	public static Set<Character> charSet = new HashSet<Character>();
@@ -108,6 +111,8 @@ public class ALIbabaHRParser2 implements BaseParser {
 			}
 			JSONArray datasArray = JobDemandAndArtJson.getJSONObject("returnValue").getJSONArray("datas");
 			int size = datasArray.size();
+			String lastDateRecord = ConfigService.getInstance()
+					.getLastDateRecord(SITE + CommonConstants.LAST_RECORD_DATE, null);
 			for (int i = 0; i < size; i++) {
 				JSONObject obj = datasArray.getJSONObject(i);
 				String department = obj.getString("departmentName");
@@ -115,28 +120,34 @@ public class ALIbabaHRParser2 implements BaseParser {
 				String location = obj.getString("workLocation");
 				int recuitNumber = obj.getInt("recruitNumber");
 				String degree = obj.getString("degree");
-				long gmtCreate = obj.getLong("gmtCreate");
+				long gmtCreate = obj.getLong("gmtModified");
 				String requirement = obj.getString("requirement");
 				String description = obj.getString("description");
 				String content = this.obtainContent(title, requirement, description);
 				Date date = new Date(gmtCreate);
 				String createTime = sdf.format(date);
 				String id = obj.getString("id");
-				// 记录最大的日期
-				if (this.maxDateStr.compareTo(createTime) < 0) {
-					this.maxDateStr = createTime;
+				// 判断当前抓取的数据，是否最新，如果不是最新数据，则不再抓取
+				if (StringUtils.isBlank(lastDateRecord) || createTime.compareTo(lastDateRecord) > 0) {
+					// 记录最大的日期
+					if (this.maxDateStr.compareTo(createTime) < 0) {
+						this.maxDateStr = createTime;
+					}
+					JobDemandArt jobDemandArt = new JobDemandArt();
+					jobDemandArt.setCompanyName(COMPANYNAME);
+					jobDemandArt.setCreateTime(createTime);
+					jobDemandArt.setDepartmentName(department);
+					jobDemandArt.setEducation(degree);
+					jobDemandArt.setHrNumber(recuitNumber);
+					jobDemandArt.setLocation(location);
+					jobDemandArt.setTitle(title);
+					jobDemandArt.setContent(content);
+					jobDemandArt.setSource(detailUrl.replace("$id", id));
+					jobDemandArts.add(jobDemandArt);
+				} else {
+					fetchFLag = false;
+					break;
 				}
-				JobDemandArt jobDemandArt = new JobDemandArt();
-				jobDemandArt.setCompanyName(COMPANYNAME);
-				jobDemandArt.setCreateTime(createTime);
-				jobDemandArt.setDepartmentName(department);
-				jobDemandArt.setEducation(degree);
-				jobDemandArt.setHrNumber(recuitNumber);
-				jobDemandArt.setLocation(location);
-				jobDemandArt.setTitle(title);
-				jobDemandArt.setContent(content);
-				jobDemandArt.setSource(detailUrl.replace("$id", id));
-				jobDemandArts.add(jobDemandArt);
 			}
 
 		} catch (Exception e) {
@@ -201,7 +212,7 @@ public class ALIbabaHRParser2 implements BaseParser {
 	@Override
 	public List<String> getPageLinks(String htmlContent) {
 		List<String> links = new ArrayList<String>();
-		if (StringUtils.isBlank(htmlContent)) {
+		if (StringUtils.isBlank(htmlContent) || !fetchFLag) {
 			return links;
 		}
 		JSONObject JobDemandAndArtJson = JSONObject.fromObject(htmlContent);
@@ -240,6 +251,7 @@ public class ALIbabaHRParser2 implements BaseParser {
 		String con = "熟悉至少一门编程语言，可以用该语言实现指定的测试产品开发要求，JAVA/Python/Ruby/PHP语言优先，有过测试产品研发成果优先";
 		// con = "深入理解Android系统原理，有丰富的移动端开发经验； ";
 		con = "如果你加入这个团队，那你的职责可能包括但不限于 \\r<br\\/>1）在架构师、技术专家的带领下，参与系统架构的设计，负责核心模块的开发、性能调优\\r<br\\/>2）参与到业务中去，和业务一起，为用户创造价值\\r<br\\/>3）具体的工作有营销平台、会员平台，组件平台等";
+		con = "Java和c++(c)至少一项精通";
 		// 添加工作要求列表
 		Matcher m = pattern.matcher(con);
 		while (m.find()) {

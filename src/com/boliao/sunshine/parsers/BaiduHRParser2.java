@@ -9,18 +9,17 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
-import org.htmlparser.tags.TableRow;
 
 import com.boliao.sunshine.biz.model.JobDemandArt;
 import com.boliao.sunshine.config.ConfigService;
 import com.boliao.sunshine.constants.CommonConstants;
 import com.boliao.sunshine.utils.SpideContentUtil;
 import com.boliao.sunshine.utils.VelUtil;
+
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
 
 /**
  * 腾旭招聘页面解析器
@@ -35,7 +34,7 @@ public class BaiduHRParser2 implements BaseParser {
 
 	// 腾旭招聘页面解析器实例
 	private static BaiduHRParser2 baiduHRParser = new BaiduHRParser2();
-	private final boolean fetchFLag = true;
+	private boolean fetchFLag = true;
 	// 腾旭招聘页面站点字符串常量
 	public final String SITE = "BAIDUHR";
 	// 最新发布的招聘日期
@@ -83,7 +82,8 @@ public class BaiduHRParser2 implements BaseParser {
 	 */
 	private String parseContent(String htmlContent) {
 		// 取出有真正职业简介内容的url
-		String conContent = SpideContentUtil.getContent(htmlContent, CommonConstants.CONTENT_START_PREFIX, CommonConstants.CONTENT_END_PREFIX, SITE, ConfigService.getInstance());
+		String conContent = SpideContentUtil.getContent(htmlContent, CommonConstants.CONTENT_START_PREFIX,
+				CommonConstants.CONTENT_END_PREFIX, SITE, ConfigService.getInstance());
 		return conContent;
 	}
 
@@ -95,8 +95,8 @@ public class BaiduHRParser2 implements BaseParser {
 	 */
 	private String parsePageContent(String htmlContent) {
 		// 从网页中抽取出，下一页的地址
-		String pageContent = SpideContentUtil.getContent(htmlContent, CommonConstants.PAGECONTENT_START_PREFIX, CommonConstants.PAGECONTENT_END_PREFIX, SITE, ConfigService
-				.getInstance());
+		String pageContent = SpideContentUtil.getContent(htmlContent, CommonConstants.PAGECONTENT_START_PREFIX,
+				CommonConstants.PAGECONTENT_END_PREFIX, SITE, ConfigService.getInstance());
 		return pageContent;
 	}
 
@@ -110,6 +110,8 @@ public class BaiduHRParser2 implements BaseParser {
 			JSONObject JobDemandAndArtJson = JSONObject.fromObject(htmlContent);
 			JSONArray datasArray = JobDemandAndArtJson.getJSONArray("postList");
 			int size = datasArray.size();
+			String lastDateRecord = ConfigService.getInstance()
+					.getLastDateRecord(SITE + CommonConstants.LAST_RECORD_DATE, null);
 			for (int i = 0; i < size; i++) {
 				JSONObject obj = datasArray.getJSONObject(i);
 				String title = obj.getString("name");
@@ -129,21 +131,27 @@ public class BaiduHRParser2 implements BaseParser {
 				String content = this.obtainContent(title, requirement, description);
 				String createTime = obj.getString("publishDate");
 				String id = obj.getString("postId");
-				// 记录最大的日期
-				if (this.maxDateStr.compareTo(createTime) < 0) {
-					this.maxDateStr = createTime;
+				// 判断当前抓取的数据，是否最新，如果不是最新数据，则不再抓取
+				if (StringUtils.isBlank(lastDateRecord) || createTime.compareTo(lastDateRecord) > 0) {
+					// 记录最大的日期
+					if (this.maxDateStr.compareTo(createTime) < 0) {
+						this.maxDateStr = createTime;
+					}
+					JobDemandArt jobDemandArt = new JobDemandArt();
+					jobDemandArt.setCompanyName(COMPANYNAME);
+					jobDemandArt.setCreateTime(createTime);
+					jobDemandArt.setDepartmentName("");
+					jobDemandArt.setLocation(location);
+					jobDemandArt.setEducation(degree);
+					jobDemandArt.setHrNumber(recuitNumber);
+					jobDemandArt.setTitle(title);
+					jobDemandArt.setContent(content);
+					jobDemandArt.setSource(detailUrl.replace("$id", id));
+					jobDemandArts.add(jobDemandArt);
+				} else {
+					fetchFLag = false;
+					break;
 				}
-				JobDemandArt jobDemandArt = new JobDemandArt();
-				jobDemandArt.setCompanyName(COMPANYNAME);
-				jobDemandArt.setCreateTime(createTime);
-				jobDemandArt.setDepartmentName("");
-				jobDemandArt.setLocation(location);
-				jobDemandArt.setEducation(degree);
-				jobDemandArt.setHrNumber(recuitNumber);
-				jobDemandArt.setTitle(title);
-				jobDemandArt.setContent(content);
-				jobDemandArt.setSource(detailUrl.replace("$id", id));
-				jobDemandArts.add(jobDemandArt);
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
@@ -175,9 +183,15 @@ public class BaiduHRParser2 implements BaseParser {
 	}
 
 	public static void main(String[] args) {
-		String result = "<td> <a target=\"_blank\" href=\"/baidu/web/templet1000/index/corpwebPosition1000baidu!getOnePosition?postIdEnc=2EE97DB5B5F2A6225A573C7754F66C1A&brandCode=1&recruitType=2&lanType=1&operational=6637AA56FA08745E71A74EA6AC68D5FFF28F462DA4C19FB3FABC8882DE74DA1C0FDB6AEAC9F8C487108CCBE39D45983B54F375AA1CAE83E6A21F36A7DBB429FDA1AA45697C458F4E318F8DFB32711E38D130740ECA46D104EAAE68E6E5E266B2A5F490AF8EE77F247C58B479FA37A1101C8FE41D11E20AFFA9511543837DA597ADA993F4A79495C679D35888897C39FD21D98BCC2FE67575CAED499E9C86325CC3D44DA1C73F4DA945C7FA90CE9460F2\" class=\"col-4\">云平台部_Web前端高级工程师</a> </td> <td> <font title=\"技术\">技术</font> </td> <td> <span title=\"北京市\"><script type=\"text/javascript\"> var wpStr = \"北京市\"; if(wpStr.length > 10){ var tempStr = wpStr.substring(0,10)+\"...\"; document.write(tempStr); }else{ document.write(wpStr); } </script></span> </td> <td> 2015-03-14 </td>";
-		TableRow row = null;
-		row.getChildren().elementAt(3);
+		String con = "-本科及以上学历，3年及以上互联网产品或运营从业经验 <br>-业务需求与理解深入，有独立产品设计思路与视野，对需求有洞察与判断力 <br>-逻辑清晰，擅长复杂业务抽象系统功能 <br>-跨团队沟通能力强，能够准确理解需求 <br>-精通Axure、PPT、Visio等产品经理常用工具 <br>-自我管理能力强，有良好的执行力 <br>-有较好的沟通交流、团队协作能力 <br>-对O2O运营、线下地推有研究者优先";
+		Matcher m = pattern.matcher(con);
+		while (m.find()) {
+			String str = m.group(1);
+			str.trim();
+			if (str.length() > 4) {
+				System.out.println(str);
+			}
+		}
 	}
 
 	/*
@@ -189,7 +203,7 @@ public class BaiduHRParser2 implements BaseParser {
 	@Override
 	public List<String> getPageLinks(String htmlContent) {
 		List<String> links = new ArrayList<String>();
-		if (StringUtils.isBlank(htmlContent)) {
+		if (StringUtils.isBlank(htmlContent) || !fetchFLag) {
 			return links;
 		}
 		JSONObject JobDemandAndArtJson = JSONObject.fromObject(htmlContent);
