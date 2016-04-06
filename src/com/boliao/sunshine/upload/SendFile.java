@@ -26,7 +26,12 @@ public class SendFile {
 	public static void main(String[] args) throws ClientProtocolException, IOException {
 		// uploadFile("http://www.itsunshine.net:8080/views/upload.do",
 		// "D:\\workspace\\sunshine\\corp.jobCorp");
-		uploadFile("http://www.itsunshine.net/views/upload.do", "D:\\workspace\\sunshine\\upload.docs");
+		// uploadFile("http://www.itsunshine.net/views/upload.do",
+		// "D:\\workspace\\sunshine\\upload.docs");
+		// uploadFile("http://localhost:8989/sunshine_new/views/upload.do",
+		// "D:\\workspace\\sunshine\\upload.ebooks");
+		uploadFile("http://www.itsunshine.net/views/upload.do", "D:\\workspace\\sunshine\\upload.ebooks");
+
 	}
 
 	/**
