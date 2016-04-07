@@ -16,38 +16,38 @@ public class HttpUtils {
 	public static String getHtml(HttpClient httpclient, String url) {
 		try {
 
-			// åˆ©ç”¨HTTP GETå‘æœåŠ¡å™¨å‘èµ·è¯·æ±‚
+			// ÀûÓÃHTTP GETÏò·şÎñÆ÷·¢ÆğÇëÇó
 			HttpGet get = new HttpGet(url);
 
-			// è·å¾—æœåŠ¡å™¨å“åº”çš„çš„æ‰€æœ‰ä¿¡ï¿½?
+			// »ñµÃ·şÎñÆ÷ÏìÓ¦µÄµÄËùÓĞĞÅ
 			HttpResponse response = httpclient.execute(get);
-			// è·å¾—æœåŠ¡å™¨å“åº”å›æ¥çš„æ¶ˆæ¯ä½“ï¼ˆä¸åŒ…æ‹¬HTTP HEADï¿½?
+			// »ñµÃ·şÎñÆ÷ÏìÓ¦»ØÀ´µÄÏûÏ¢Ìå£¨²»°üÀ¨HTTP HEAD
 			HttpEntity entity = response.getEntity();
 			if (entity != null) {
-				// è·å¾—å“åº”çš„å­—ç¬¦é›†ç¼–ç ä¿¡æ¯
-				// å³è·å–HTTP HEADçš„ï¼šContent-Type:text/html;charset=UTF-8ä¸­çš„å­—ç¬¦é›†ä¿¡ï¿½?
+				// »ñµÃÏìÓ¦µÄ×Ö·û¼¯±àÂëĞÅÏ¢
+				// ¼´»ñÈ¡HTTP HEADµÄ£ºContent-Type:text/html;charset=UTF-8ÖĞµÄ×Ö·û¼¯ĞÅ
 				String charset = EntityUtils.getContentCharSet(entity);
 				InputStream is = entity.getContent();
 				byte[] content = IOUtils.toByteArray(is);
 
 				String html = null;
-				// å‡å¦‚HTTP HEADä¸­ä¸åŒ…å«charsetçš„ä¿¡æ¯ï¼Œåˆ™ä»ç½‘é¡µå†…å®¹ï¿½?meta>æ ‡ç­¾ä¸­æå–charsetä¿¡æ¯
+				// ¼ÙÈçHTTP HEADÖĞ²»°üº¬charsetµÄĞÅÏ¢£¬Ôò´ÓÍøÒ³ÄÚÈİmeta>±êÇ©ÖĞÌáÈ¡charsetĞÅÏ¢
 				if (charset == null) {
-					// å°è¯•ç”¨ISO-8859-1è¿™ä¸ªç¼–ç æ¥è§£é‡ŠHTML
+					// ³¢ÊÔÓÃISO-8859-1Õâ¸ö±àÂëÀ´½âÊÍHTML
 					html = new String(content, "ISO-8859-1");
 					Parser parser = new Parser();
 					parser.setInputHTML(html);
-					// å°è¯•è§£é‡Šæœ¬ç½‘é¡µï¼ŒHTMLParseråœ¨è§£é‡Šç½‘é¡µçš„è¿‡ç¨‹ä¸­ï¼Œä¼šè‡ªåŠ¨æï¿½?
+					// ³¢ÊÔ½âÊÍ±¾ÍøÒ³£¬HTMLParserÔÚ½âÊÍÍøÒ³µÄ¹ı³ÌÖĞ£¬»á×Ô¶¯Ìá
 					// <meta http-equiv="Content-Type"
-					// content="text/html; charset=UTF-8"/>ï¿½?
-					// ï¿½?ï¿½ï¿½å«çš„ç¼–ç ä¿¡æ¯
+					// content="text/html; charset=UTF-8"/>
+					// º¬µÄ±àÂëĞÅÏ¢
 					parser.parse(null);
 
-					// å¦‚æœç½‘é¡µä¸­ä¸åŒ…å«ç¼–ç ä¿¡æ¯ï¼Œåˆ™è¿™ä¸ªå€¼è¿”å›ç©º
+					// Èç¹ûÍøÒ³ÖĞ²»°üº¬±àÂëĞÅÏ¢£¬ÔòÕâ¸öÖµ·µ»Ø¿Õ
 					charset = parser.getEncoding();
 				}
 
-				if (charset != null && !charset.equals("ISO-8859-1")) { // å¯ä»¥é‡‡ç”¨çŒœæµ‹ç®—æ³•ï¼ˆç°åœ¨å¿½ç•¥ï¼‰
+				if (charset != null && !charset.equals("ISO-8859-1")) { // ¿ÉÒÔ²ÉÓÃ²Â²âËã·¨£¨ÏÖÔÚºöÂÔ£©
 					html = new String(content, charset);
 				}
 
@@ -62,12 +62,12 @@ public class HttpUtils {
 	public static byte[] getImage(HttpClient httpclient, String url) {
 		try {
 
-			// åˆ©ç”¨HTTP GETå‘æœåŠ¡å™¨å‘èµ·è¯·æ±‚
+			// ÀûÓÃHTTP GETÏò·şÎñÆ÷·¢ÆğÇëÇó
 			HttpGet get = new HttpGet(url);
 
-			// è·å¾—æœåŠ¡å™¨å“åº”çš„çš„æ‰€æœ‰ä¿¡ï¿½?
+			// »ñµÃ·şÎñÆ÷ÏìÓ¦µÄµÄËùÓĞĞÅ
 			HttpResponse response = httpclient.execute(get);
-			// è·å¾—æœåŠ¡å™¨å“åº”å›æ¥çš„æ¶ˆæ¯ä½“ï¼ˆä¸åŒ…æ‹¬HTTP HEADï¿½?
+			// »ñµÃ·şÎñÆ÷ÏìÓ¦»ØÀ´µÄÏûÏ¢Ìå£¨²»°üÀ¨HTTP HEAD
 			HttpEntity entity = response.getEntity();
 			if (entity != null) {
 				InputStream is = entity.getContent();

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     2015/5/18 16:01:52                                                        
+
+     project    
+     description
+                   
+     liaobo                                                                
+     ====================================================================== -->
+<project name="sunshine_spider_offgrid" default="default" basedir=".">
+	<description>
+            this script is for building and packaging the sunshine_spider_offgrid module.
+    		any doubts connect liaobo.
+    </description>
+
+	<property name="src.dir" value="${basedir}\src" />
+	<property environment="env" />
+	<property name="build.dir" value="${basedir}\build" />
+	<property name="commonLib" value="../common/lib" />
+	<!-- 定义属性，打成jar包的名称。 -->
+	<property name="sunshine_spider_offgrid.jar" value="sunshine_spider_offgrid.jar" />
+	<!-- 定义路径，编译java文件时用到的jar包。 -->
+	<path id="project.lib">
+		<fileset dir="${basedir}/lib">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+	<!-- common下的jar包 -->
+	<path id="commonLib">
+		<fileset dir="${commonLib}">
+			<include name="**/*.jar"/>
+		</fileset>
+	</path>
+
+	<!-- ================================= 
+	          target: clean              
+	         ================================= -->
+	<target name="clean">
+		<delete dir="${build.dir}" />
+		<mkdir dir="${build.dir}" />
+	</target>
+	<!-- ================================= 
+	          target: compile              
+	         ================================= -->
+	<target name="compile" depends="clean" description="compile">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="true" encoding="GBK">
+			<classpath refid="project.lib" />
+			<classpath refid="commonLib" />
+		</javac>
+	</target>
+
+	<!-- 定义默认任务，将class文件集合成jar包。 -->
+	<target name="default" depends="compile">
+		<!-- 删除原有jar包。 -->
+		<delete dir="${basedir}/${sunshine_spider_offgrid.jar}" />
+		<!-- 建立新jar包。 -->
+		<jar destfile="${basedir}/${sunshine_spider_offgrid.jar}" basedir="${build.dir}">
+			<manifest>
+				<attribute name="Main-Class" value="com.boliao.sunshine.main.SpiderLauncher"/>
+				<attribute name="Class-Path" value="${libs}"/>
+			</manifest>
+			<zipfileset dir="${commonLib}" includes="**/*.jar"/>
+		</jar>
+	</target>
+</project>
