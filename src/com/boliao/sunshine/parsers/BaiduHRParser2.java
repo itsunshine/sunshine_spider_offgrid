@@ -40,7 +40,7 @@ public class BaiduHRParser2 implements BaseParser {
 	// 最新发布的招聘日期
 	private String maxDateStr = "";
 	// 公司名字
-	public final String COMPANYNAME = "百度";
+	public final String COMPANYNAME = "百度公司";
 	// 百度下一页的url模板
 	private final String jobUrl = "http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=$pageIndex&keyWord=&_=1453215195631";
 	// 工作详细页url
