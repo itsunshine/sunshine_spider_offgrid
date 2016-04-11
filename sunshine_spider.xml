@@ -31,7 +31,8 @@
 			<include name="**/*.jar"/>
 		</fileset>
 	</path>
-
+	<!--组合各个路径，构成MANIFEST.MF文件中Class-Path所需的字符串-->  
+	<property name="libs" value="${project.lib} ${commonLib}" />  
 	<!-- ================================= 
 	          target: clean              
 	         ================================= -->
@@ -43,7 +44,7 @@
 	          target: compile              
 	         ================================= -->
 	<target name="compile" depends="clean" description="compile">
-		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="true" encoding="GBK">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="true" encoding="GBK" source="1.7">
 			<classpath refid="project.lib" />
 			<classpath refid="commonLib" />
 		</javac>
@@ -59,7 +60,9 @@
 				<attribute name="Main-Class" value="com.boliao.sunshine.main.SpiderLauncher"/>
 				<attribute name="Class-Path" value="${libs}"/>
 			</manifest>
-			<zipfileset dir="${commonLib}" includes="**/*.jar"/>
+			<!-- 
+			<zipfileset excludes="META-INF/*.SF" dir="${commonLib}" includes="**/*.jar"/>
+			-->
 		</jar>
 	</target>
 </project>
