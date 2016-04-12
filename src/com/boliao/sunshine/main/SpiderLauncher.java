@@ -14,8 +14,6 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import net.sf.json.JSONObject;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
@@ -30,6 +28,8 @@ import com.boliao.sunshine.context.SpiderContext;
 import com.boliao.sunshine.fetchers.ContentFetcher;
 import com.boliao.sunshine.fetchers.URLFetcher;
 import com.boliao.sunshine.upload.SendFile;
+
+import net.sf.json.JSONObject;
 
 /**
  * 抓取网页内容
@@ -56,6 +56,9 @@ public class SpiderLauncher {
 
 	// 需要完成任务的抓取器数目；
 	private final int NEED_COMP_NUM = 2;
+
+	// 抓取网页内容后的基础目录
+	public static String baseDir = "";
 
 	// 用于判断是否该自我唤醒
 	AtomicInteger needCompNum = new AtomicInteger(0);
@@ -149,10 +152,13 @@ public class SpiderLauncher {
 					recentDateRecordFile = args[++i];
 				} else if (args[i].equals("-r")) {
 					isRecovery = true;
+				} else if (args[i].equals("-b")) {
+					baseDir = args[++i];
 				}
 			}
 			// 输入参数，校验
-			if (StringUtils.isBlank(seedsFile) && StringUtils.isBlank(recentDateRecordFile) && !isRecovery) {
+			if ((StringUtils.isBlank(seedsFile) || StringUtils.isBlank(recentDateRecordFile)
+					|| StringUtils.isBlank(baseDir)) && !isRecovery) {
 				printArgumentsAlerts(args);
 			}
 			// 初始化url的抓取器，以及内容的抓取器，并启动内容抓取线程
@@ -210,7 +216,8 @@ public class SpiderLauncher {
 				spiderLauncher.waitLauncher();
 				while (true) {
 					// 如果url抓取工作已经完成，就删除掉之前抓取失败的日志文件;如果内容抓取的工作已经完成，就删除之前抓取失败的日志文件
-					if (spiderLauncher.uRLFetcher.isURLFetchDone() && spiderLauncher.contentFetcher.isContentFetchDone()) {
+					if (spiderLauncher.uRLFetcher.isURLFetchDone()
+							&& spiderLauncher.contentFetcher.isContentFetchDone()) {
 						for (File file : urlErrs) {
 							LogUtil.info(logger, "the deleted urlFile is : " + file.getAbsolutePath());
 							FileUtils.deleteDir(file.getAbsolutePath());
@@ -262,7 +269,8 @@ public class SpiderLauncher {
 	 * @param configService
 	 * @throws Exception
 	 */
-	private void asyncLaunchConFetcher(final File[] conErrs, final ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
+	private void asyncLaunchConFetcher(final File[] conErrs, final ArrayBlockingQueue<JobDemandArt> resultQueue)
+			throws Exception {
 		// 恢复内容抓取错误的工作信息
 		for (File file : conErrs) {
 			FileReader fr = new FileReader(file);
@@ -292,7 +300,8 @@ public class SpiderLauncher {
 	 * @param configService
 	 * @throws Exception
 	 */
-	private void asyncLaunchUrlFetcher(File[] urlErrs, ConfigService configService, ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
+	private void asyncLaunchUrlFetcher(File[] urlErrs, ConfigService configService,
+			ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
 		for (File urlErr : urlErrs) {
 			File[] files = urlErr.listFiles();
 			String seedsFile = null;
@@ -340,7 +349,8 @@ public class SpiderLauncher {
 	 * @param args
 	 */
 	private static void printArgumentsAlerts(String[] args) {
-		LogUtil.warn(logger, "itsunshine--->spider module: the input args wrong. use -s input seeds file, use -d input dateRecord file or -r set the run mode to recovery mode!");
+		LogUtil.warn(logger,
+				"itsunshine--->spider module: the input args wrong. use -s input seeds file,use -b input basepath use -d input dateRecord file or -r set the run mode to recovery mode!");
 		throw new RuntimeException("输入参数不对args：" + args);
 	}
 }

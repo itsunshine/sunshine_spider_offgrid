@@ -1,0 +1,161 @@
+2016-04-12 10:38:02 [Thread-10] ERROR ERROR(line-83) 1     - 创建抓取结果文件时失败，出错
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1006)
+	at com.boliao.sunshine.biz.utils.FileUtils.createFile(FileUtils.java:38)
+	at com.boliao.sunshine.fetchers.ContentFetcher.initWorkers(ContentFetcher.java:222)
+	at com.boliao.sunshine.fetchers.ContentFetcher.spide(ContentFetcher.java:178)
+	at com.boliao.sunshine.fetchers.ContentFetcher$MainThread.run(ContentFetcher.java:162)
+2016-04-12 10:39:29 [main] ERROR ERROR(line-83) 4     - itsunshine抓取数据错误
+java.lang.RuntimeException: 输入参数不对args：[Ljava.lang.String;@6b959b32
+	at com.boliao.sunshine.main.SpiderLauncher.printArgumentsAlerts(SpiderLauncher.java:354)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:162)
+2016-04-12 10:42:35 [main] ERROR ERROR(line-83) 45706  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:68)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:252)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more
+2016-04-12 10:55:23 [pool-1-thread-2] ERROR ERROR(line-83) 2826  - 抓取url出错，请详查，url：https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:55:23 [pool-1-thread-1] ERROR ERROR(line-83) 3299  - 抓取url出错，请详查，url：http://hr.tencent.com/position.php?keywords=WXG&lid=0&tid=87&start=0#a
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:55:25 [pool-1-thread-3] ERROR ERROR(line-83) 5200  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:56:55 [pool-1-thread-3] ERROR ERROR(line-83) 1666  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:56:55 [pool-1-thread-3] ERROR ERROR(line-83) 1671  - 记录错误文件出错：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createNewFile(File.java:1006)
+	at com.boliao.sunshine.biz.utils.FileUtils.createFile(FileUtils.java:38)
+	at com.boliao.sunshine.fetchers.URLFetcher.recordFetchFaildUrl(URLFetcher.java:479)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$7(URLFetcher.java:475)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:564)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:56:55 [pool-1-thread-2] ERROR ERROR(line-83) 2329  - 抓取url出错，请详查，url：https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 10:56:56 [pool-1-thread-1] ERROR ERROR(line-83) 3523  - 抓取url出错，请详查，url：http://hr.tencent.com/position.php?keywords=WXG&lid=0&tid=87&start=0#a
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:03:57 [pool-1-thread-3] ERROR ERROR(line-83) 2020  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:03:58 [pool-1-thread-2] ERROR ERROR(line-83) 2905  - 抓取url出错，请详查，url：https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:03:58 [pool-1-thread-1] ERROR ERROR(line-83) 3315  - 抓取url出错，请详查，url：http://hr.tencent.com/position.php?keywords=WXG&lid=0&tid=87&start=0#a
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:04:49 [pool-1-thread-3] ERROR ERROR(line-83) 1384  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:04:50 [pool-1-thread-2] ERROR ERROR(line-83) 2095  - 抓取url出错，请详查，url：https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:04:52 [pool-1-thread-1] ERROR ERROR(line-83) 3768  - 抓取url出错，请详查，url：http://hr.tencent.com/position.php?keywords=WXG&lid=0&tid=87&start=0#a
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-12 11:05:34 [main] ERROR ERROR(line-83) 45765  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:68)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:252)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more

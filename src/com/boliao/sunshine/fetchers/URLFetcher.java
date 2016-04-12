@@ -109,16 +109,18 @@ public class URLFetcher {
 		parserMap.put(CommonConstants.TENCENTHR, TencentHRParser.getInstance());
 		parserMap.put(CommonConstants.BAIDUHR, BaiduHRParser2.getInstance());
 		parserMap.put(CommonConstants.TAOBAOHR, ALIbabaHRParser2.getInstance());
-		executor = new ThreadPoolExecutor(THREADE_POOL_SIZE, THREADE_POOL_SIZE, 10L, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10),
-				new ThreadPoolExecutor.CallerRunsPolicy());
+		executor = new ThreadPoolExecutor(THREADE_POOL_SIZE, THREADE_POOL_SIZE, 10L, TimeUnit.SECONDS,
+				new ArrayBlockingQueue<Runnable>(10), new ThreadPoolExecutor.CallerRunsPolicy());
 		for (int i = 0; i < THREADE_POOL_SIZE; i++) {
 			URLFetchWorker worker = new URLFetchWorker();
 			workers.add(worker);
 		}
 		for (String url : parserMap.keySet()) {
-			String filePath = CommonConstants.SEEDS_DIR + url + File.separator + CommonConstants.filefmt.format(new Date()) + ".txt";
+			String filePath = spiderLauncher + File.separator + CommonConstants.SEEDS_DIR + url + File.separator
+					+ CommonConstants.filefmt.format(new Date()) + ".txt";
 			if (this.isRecoveryMode) {
-				filePath = CommonConstants.RECOVERY_SEEDS_DIR + url + File.separator + CommonConstants.filefmt.format(new Date()) + ".txt";
+				filePath = spiderLauncher + File.separator + CommonConstants.RECOVERY_SEEDS_DIR + url + File.separator
+						+ CommonConstants.filefmt.format(new Date()) + ".txt";
 			}
 			File file = new File(filePath);
 			try {
@@ -197,7 +199,8 @@ public class URLFetcher {
 	 *            最终结果
 	 * @throws Exception
 	 */
-	private void saveContentUrlToFile(ArrayBlockingQueue<JobDemandArt> tmpResultQueue, ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
+	private void saveContentUrlToFile(ArrayBlockingQueue<JobDemandArt> tmpResultQueue,
+			ArrayBlockingQueue<JobDemandArt> resultQueue) throws Exception {
 		JobDemandArt jobDemandArt = tmpResultQueue.take();
 		if (jobDemandArt instanceof JobDemandArtEnd) {
 			isSaveConUrlFlag = false;
@@ -344,7 +347,8 @@ public class URLFetcher {
 		try {
 			for (String seed : seeds) {
 				BaseParser baseParser = queryParser(seed);
-				ConfigService.getInstance().flushRecentRecord(baseParser.getSite() + CommonConstants.LAST_RECORD_DATE, baseParser.getMaxDateStr());
+				ConfigService.getInstance().flushRecentRecord(baseParser.getSite() + CommonConstants.LAST_RECORD_DATE,
+						baseParser.getMaxDateStr());
 				ConfigService.getInstance().storeRecentDate(dateRecordFile);
 			}
 		} catch (Exception e) {
@@ -501,7 +505,8 @@ public class URLFetcher {
 		private ArrayBlockingQueue<JobDemandArt> tmpResultQueue = null;
 		private ArrayBlockingQueue<JobDemandArt> resultQueue = null;
 
-		public SaveConUrlWorker(ArrayBlockingQueue<JobDemandArt> tmpResultQueue, ArrayBlockingQueue<JobDemandArt> resultQueue) {
+		public SaveConUrlWorker(ArrayBlockingQueue<JobDemandArt> tmpResultQueue,
+				ArrayBlockingQueue<JobDemandArt> resultQueue) {
 			this.tmpResultQueue = tmpResultQueue;
 			this.resultQueue = resultQueue;
 		}
@@ -550,9 +555,11 @@ public class URLFetcher {
 			} catch (Exception e) {
 				LogUtil.error(errorLogger, "抓取url出错，请详查，url：" + visitUrl, e);
 				String homeDir = System.getProperty(CommonConstants.USER_DIR);
-				String urlErrFile = homeDir + File.separator + CommonConstants.URL_FETCH_ERROR + File.separator + CommonConstants.filefmt.format(new Date()) + File.separator
+				String urlErrFile = spiderLauncher.baseDir + File.separator + CommonConstants.URL_FETCH_ERROR
+						+ File.separator + CommonConstants.filefmt.format(new Date()) + File.separator
 						+ CommonConstants.ERROR_URL;
-				String dtErrFile = homeDir + File.separator + CommonConstants.URL_FETCH_ERROR + File.separator + CommonConstants.filefmt.format(new Date()) + File.separator
+				String dtErrFile = spiderLauncher.baseDir + File.separator + CommonConstants.URL_FETCH_ERROR
+						+ File.separator + CommonConstants.filefmt.format(new Date()) + File.separator
 						+ CommonConstants.ERROR_DATE;
 				recordFetchFaildUrl(urlErrFile, dtErrFile, visitUrl);
 			} finally {

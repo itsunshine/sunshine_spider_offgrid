@@ -18,8 +18,6 @@ import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.concurrent.atomic.AtomicInteger;
 
-import net.sf.json.JSONObject;
-
 import org.apache.commons.lang.StringUtils;
 import org.apache.log4j.Logger;
 
@@ -32,6 +30,8 @@ import com.boliao.sunshine.constants.CommonConstants;
 import com.boliao.sunshine.context.SpiderContext;
 import com.boliao.sunshine.main.SpiderLauncher;
 import com.boliao.sunshine.spider.BaseContentExtraction;
+
+import net.sf.json.JSONObject;
 
 /**
  * 内容抓取器
@@ -87,8 +87,8 @@ public class ContentFetcher {
 		configMap.put(CommonConstants.ITEYE, TypeConstants.QUESTION);
 		configMap.put(CommonConstants.TENCENTHR, TypeConstants.JOBDEMANDART);
 		configMap.put(CommonConstants.BAIDUHR, TypeConstants.JOBDEMANDART);
-		executor = new ThreadPoolExecutor(THREADE_POOL_SIZE, THREADE_POOL_SIZE, 10L, TimeUnit.SECONDS, new ArrayBlockingQueue<Runnable>(10),
-				new ThreadPoolExecutor.CallerRunsPolicy());
+		executor = new ThreadPoolExecutor(THREADE_POOL_SIZE, THREADE_POOL_SIZE, 10L, TimeUnit.SECONDS,
+				new ArrayBlockingQueue<Runnable>(10), new ThreadPoolExecutor.CallerRunsPolicy());
 	}
 
 	// 获得实例对象
@@ -123,8 +123,8 @@ public class ContentFetcher {
 			LogUtil.error(errorLogger, "抓取招聘页面内容时出错，抓取的url为：" + jobDemandArt.getSource(), e);
 		} catch (Exception e) {
 			LogUtil.error(errorLogger, "抓取招聘页面内容时出错，抓取的url为：" + jobDemandArt.getSource(), e);
-			String homeDir = System.getProperty(CommonConstants.USER_DIR);
-			String conErrFile = homeDir + File.separator + CommonConstants.CON_FETCH_ERROR + File.separator + CommonConstants.filefmt.format(new Date());
+			String conErrFile = spiderLauncher.baseDir + File.separator + CommonConstants.CON_FETCH_ERROR
+					+ File.separator + CommonConstants.filefmt.format(new Date());
 			recordFetchFaildUrl(conErrFile, jobDemandArt);
 		}
 
@@ -210,10 +210,12 @@ public class ContentFetcher {
 			workers.add(worker);
 		}
 
-		String filePath = "spider" + File.separator + TypeConstants.JOBDEMANDART + File.separator + CommonConstants.filefmt.format(new Date()) + "_" + TypeConstants.JOBDEMANDART;
+		String filePath = spiderLauncher.baseDir + File.separator + "spider" + File.separator
+				+ TypeConstants.JOBDEMANDART + File.separator + CommonConstants.filefmt.format(new Date()) + "_"
+				+ TypeConstants.JOBDEMANDART;
 		if (this.isRecoveryMode) {
-			filePath = "recovery" + File.separator + "spider" + File.separator + TypeConstants.JOBDEMANDART + File.separator + CommonConstants.filefmt.format(new Date()) + "_"
-					+ TypeConstants.JOBDEMANDART;
+			filePath = "recovery" + File.separator + "spider" + File.separator + TypeConstants.JOBDEMANDART
+					+ File.separator + CommonConstants.filefmt.format(new Date()) + "_" + TypeConstants.JOBDEMANDART;
 		}
 		SpiderContext.setJobDemandFile(filePath);
 		try {
