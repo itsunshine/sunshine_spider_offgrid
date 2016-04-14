@@ -4,6 +4,7 @@
 package com.boliao.sunshine.config;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.FileReader;
@@ -32,7 +33,7 @@ public class ConfigService {
 
 	// grid下配置文件路径
 	private static final String defaultTmpCfgFile = "com/boliao/sunshine/properties/htmlParseTempConfig.properties";
-	private static final String defaultLastDateRecordFile = "com/boliao/sunshine/properties/lastDateRecord.properties";
+	public String defaultLastDateRecordFile = "com/boliao/sunshine/properties/lastDateRecord.properties";
 
 	// 本地文件夹下的路径
 	private String localHtmlTempCfg;// 暂时无用
@@ -52,13 +53,17 @@ public class ConfigService {
 				lastDateRecordPros.load(fr);
 				fr.close();
 			} else if (isLocalSpecifiedMode) {
-				htmlTmpParseconfigPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
+				htmlTmpParseconfigPros
+						.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
 				FileReader fr = new FileReader(localLastDateRecord);
 				lastDateRecordPros.load(fr);
 				fr.close();
 			} else {
-				htmlTmpParseconfigPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
-				lastDateRecordPros.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultLastDateRecordFile));
+				htmlTmpParseconfigPros
+						.load(ConfigService.class.getClassLoader().getResourceAsStream(defaultTmpCfgFile));
+				FileInputStream inputStream = new FileInputStream(defaultLastDateRecordFile);
+				lastDateRecordPros.load(inputStream);
+				inputStream.close();
 			}
 
 		} catch (IOException e) {
@@ -184,8 +189,7 @@ public class ConfigService {
 
 	public static void main(String[] args) {
 		ConfigService configService = new ConfigService();
+		configService.defaultLastDateRecordFile = "/Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/src/com/boliao/sunshine/properties/lastDateRecord.properties";
 		configService.init();
-		configService.flushRecentRecord("a", "sdfaeds");
-		configService.storeRecentDate(null);
 	}
 }

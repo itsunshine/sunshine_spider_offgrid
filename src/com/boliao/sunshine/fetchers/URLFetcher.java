@@ -116,11 +116,11 @@ public class URLFetcher {
 			workers.add(worker);
 		}
 		for (String url : parserMap.keySet()) {
-			String filePath = spiderLauncher + File.separator + CommonConstants.SEEDS_DIR + url + File.separator
+			String filePath = spiderLauncher.baseDir + File.separator + CommonConstants.SEEDS_DIR + url + File.separator
 					+ CommonConstants.filefmt.format(new Date()) + ".txt";
 			if (this.isRecoveryMode) {
-				filePath = spiderLauncher + File.separator + CommonConstants.RECOVERY_SEEDS_DIR + url + File.separator
-						+ CommonConstants.filefmt.format(new Date()) + ".txt";
+				filePath = spiderLauncher.baseDir + File.separator + CommonConstants.RECOVERY_SEEDS_DIR + url
+						+ File.separator + CommonConstants.filefmt.format(new Date()) + ".txt";
 			}
 			File file = new File(filePath);
 			try {

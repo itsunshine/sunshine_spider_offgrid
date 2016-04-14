@@ -66,9 +66,9 @@ public class CommonConstants {
 	public static final String RECOVERY_SEEDS_DIR = "recovery" + File.separator + "temp" + File.separator;
 
 	// 上传网站的url地址
-	public static final String UPLOAD_URL = "http://localhost:8989/sunshine_new/views/upload.do";
-	// public static final String UPLOAD_URL =
-	// "http://www.itsunshine.net/views/upload.do";
+	 public static final String UPLOAD_URL =
+	 "http://localhost:8989/sunshine_new/views/upload.do";
+//	public static final String UPLOAD_URL = "http://www.itsunshine.net/views/upload.do";
 
 	// 程序运行目录
 	public static final String USER_DIR = "user.dir";

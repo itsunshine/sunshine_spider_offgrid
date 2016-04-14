@@ -4,11 +4,7 @@
 . /etc/profile
 export LANG=en_US.UTF-8
 
-MAILLIST="liaobo,fuqiang5,jinling5"
-SUBJECT="物料推送"
-CONTENT="物料推送失败！"
-
-BASIC_PATH="/Users/liaobo/workspace_j2ee/spider"
+BASIC_PATH="/Users/liaobo/zip/spider"
 CP=$BASIC_PATH/lib/sunshine_spider_offgrid.jar
 for file in `ls ${BASIC_PATH}/lib`
 do
@@ -18,6 +14,6 @@ do
 	fi
 done
 echo $CP
-PROS="-s /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/spider/seeds.txt -d /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/src/com/boliao/sunshine/properties/lastDateRecord.properties  -b /Users/liaobo/workspace_j2ee/spider"
+PROS="-s ${BASIC_PATH}/spider/seeds.txt -d ${BASIC_PATH}/spider/lastDateRecord.properties -b ${BASIC_PATH}"
 CLASS=com.boliao.sunshine.main.SpiderLauncher
 java -cp $CP $CLASS $PROS

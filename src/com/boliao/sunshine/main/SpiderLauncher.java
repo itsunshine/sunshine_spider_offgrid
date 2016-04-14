@@ -139,7 +139,6 @@ public class SpiderLauncher {
 	 */
 	public static void main(String[] args) {
 		inputArgsCheck(args);
-		final SpiderLauncher spiderLauncher = new SpiderLauncher();
 		try {
 			// 获取所有输入的参数
 			String seedsFile = null;
@@ -156,11 +155,14 @@ public class SpiderLauncher {
 					baseDir = args[++i];
 				}
 			}
+			final SpiderLauncher spiderLauncher = new SpiderLauncher();
 			// 输入参数，校验
 			if ((StringUtils.isBlank(seedsFile) || StringUtils.isBlank(recentDateRecordFile)
 					|| StringUtils.isBlank(baseDir)) && !isRecovery) {
 				printArgumentsAlerts(args);
 			}
+			// 抓取的最新日期配置文件进行
+			ConfigService.getInstance().defaultLastDateRecordFile = recentDateRecordFile;
 			// 初始化url的抓取器，以及内容的抓取器，并启动内容抓取线程
 			final ArrayBlockingQueue<JobDemandArt> resultQueue = new ArrayBlockingQueue<JobDemandArt>(1000);
 			spiderLauncher.uRLFetcher.setResultQueue(resultQueue);

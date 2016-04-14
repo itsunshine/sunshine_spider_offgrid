@@ -46,25 +46,27 @@
 	          target: compile              
 	         ================================= -->
 	<target name="compile" depends="clean" description="compile">
-		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="true" encoding="GBK" source="1.7">
+		<javac srcdir="${src.dir}" destdir="${build.dir}" includeantruntime="true" encoding="GBK">
 			<classpath refid="project.lib" />
 			<classpath refid="commonLib" />
 		</javac>
 	</target>
-
+	
 	<!-- 定义默认任务，将class文件集合成jar包。 -->
 	<target name="default" depends="compile">
+		<!-- 拷贝必须的配置文件到classpath下 -->		
+		<copy todir="${build.dir}">
+			<fileset dir="${src.dir}">
+		    	<exclude name="**/*.java"/>
+		  	</fileset>
+		</copy>
 		<!-- 删除原有jar包。 -->
 		<delete dir="${basedir}/lib/${sunshine_spider_offgrid.jar}" />
 		<!-- 建立新jar包。 -->
 		<jar destfile="${basedir}/lib/${sunshine_spider_offgrid.jar}" basedir="${build.dir}">
 			<manifest>
 				<attribute name="Main-Class" value="com.boliao.sunshine.main.SpiderLauncher" />
-				<attribute name="Class-Path" value="${libs}" />
 			</manifest>
-			<!-- 
-			<zipfileset excludes="META-INF/*.SF" dir="${commonLib}" includes="**/*.jar"/>
-			-->
 		</jar>
 	</target>
 
@@ -77,6 +79,9 @@
 			<zipfileset dir="lib" includes="**/*.*" prefix="lib" />
 			<zipfileset dir="${commonLib}" includes="**/*.*" prefix="lib" />
 			<zipfileset dir="${basedir}/src" includes="*.properties" prefix="lib" />
+			<zipfileset dir="${basedir}/templates" includes="*.vm" prefix="templates" />
+			<zipfileset dir="${basedir}/spider" includes="seeds.txt" prefix="spider" />
+			<zipfileset dir="${basedir}/spider" includes="lastDateRecord.properties" prefix="spider" />
 		</zip>
 	</target>
 </project>
