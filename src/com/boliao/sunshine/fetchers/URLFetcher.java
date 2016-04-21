@@ -383,14 +383,14 @@ public class URLFetcher {
 
 		URL url = new URL(visitUrl);
 		// 必须先抓取内容的url，再抓page的url
-		List<JobDemandArt> contentLinks = parser.getLinks(htmlContent);
+		List<JobDemandArt> contentLinks = parser.getLinks(htmlContent, this.isRecoveryMode);
 		int tryTime = 3;
 		while ((contentLinks == null || contentLinks.isEmpty()) && (tryTime-- > 0)) {
 			// 抓取到的网页内容
 			htmlContent = HttpUtil.getHtmlContent(visitUrl);
 			parser = queryParser(visitUrl);
 			// 必须先抓取内容的url，再抓page的url
-			contentLinks = parser.getLinks(htmlContent);
+			contentLinks = parser.getLinks(htmlContent, this.isRecoveryMode);
 		}
 		if (contentLinks == null || contentLinks.isEmpty()) {
 			logger.info("the fetched contentLinks are null...");
@@ -485,7 +485,9 @@ public class URLFetcher {
 				fw.close();
 				fw = new FileWriter(dtErrFile);
 				BaseParser baseParser = this.queryParser(url);
-				fw.write(StringUtils.defaultIfEmpty(baseParser.getLastDateStr(), StringUtils.EMPTY));
+				fw.write(StringUtils.defaultIfEmpty(
+						baseParser.getSite() + CommonConstants.LAST_RECORD_DATE + "=" + baseParser.getLastDateStr(),
+						StringUtils.EMPTY));
 				fw.flush();
 				fw.close();
 			} catch (IOException e) {
@@ -554,7 +556,6 @@ public class URLFetcher {
 				fetchUrl(visitUrl, resultQueue);
 			} catch (Exception e) {
 				LogUtil.error(errorLogger, "抓取url出错，请详查，url：" + visitUrl, e);
-				String homeDir = System.getProperty(CommonConstants.USER_DIR);
 				String urlErrFile = spiderLauncher.baseDir + File.separator + CommonConstants.URL_FETCH_ERROR
 						+ File.separator + CommonConstants.filefmt.format(new Date()) + File.separator
 						+ CommonConstants.ERROR_URL;

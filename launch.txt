@@ -1,2 +1,3 @@
 #-s D:/workspace/spiderServiceUtil/spider/seeds.txt -d D:\workspace\spiderServiceUtil\src\com\boliao\sunshine\properties\lastDateRecord.properties -b /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid
--r
+-s /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/spider/seeds.txt -d /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/src/com/boliao/sunshine/properties/lastDateRecord.properties -b /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid
+-r -b /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid

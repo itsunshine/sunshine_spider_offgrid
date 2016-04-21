@@ -75,7 +75,8 @@ public class TencentHRParser implements BaseParser {
 	 */
 	private String parseContent(String htmlContent) {
 		// 取出有真正职业简介内容的url
-		String conContent = SpideContentUtil.getContent(htmlContent, CommonConstants.CONTENT_START_PREFIX, CommonConstants.CONTENT_END_PREFIX, SITE, ConfigService.getInstance());
+		String conContent = SpideContentUtil.getContent(htmlContent, CommonConstants.CONTENT_START_PREFIX,
+				CommonConstants.CONTENT_END_PREFIX, SITE, ConfigService.getInstance());
 		return conContent;
 	}
 
@@ -87,13 +88,13 @@ public class TencentHRParser implements BaseParser {
 	 */
 	private String parsePageContent(String htmlContent) {
 		// 从网页中抽取出，下一页的地址
-		String pageContent = SpideContentUtil.getContent(htmlContent, CommonConstants.PAGECONTENT_START_PREFIX, CommonConstants.PAGECONTENT_END_PREFIX, SITE, ConfigService
-				.getInstance());
+		String pageContent = SpideContentUtil.getContent(htmlContent, CommonConstants.PAGECONTENT_START_PREFIX,
+				CommonConstants.PAGECONTENT_END_PREFIX, SITE, ConfigService.getInstance());
 		return pageContent;
 	}
 
 	@Override
-	public List<JobDemandArt> getLinks(String htmlContent) {
+	public List<JobDemandArt> getLinks(String htmlContent, boolean isRecovery) {
 		List<JobDemandArt> jobDemandArts = new ArrayList<JobDemandArt>();
 		if (!fetchFLag) {
 			return jobDemandArts;
@@ -104,7 +105,7 @@ public class TencentHRParser implements BaseParser {
 			throw new RuntimeException("腾讯招聘页面,html内容解析，出错。");
 		}
 		try {
-			getContentLinks(content, jobDemandArts, null, false);
+			getContentLinks(content, jobDemandArts, null, false, isRecovery);
 		} catch (ParseException e) {
 			throw new RuntimeException(e);
 		} catch (ParserException e) {
@@ -123,7 +124,8 @@ public class TencentHRParser implements BaseParser {
 	 * @throws ParseException
 	 * @throws ParserException
 	 */
-	private void getContentLinks(String content, List<JobDemandArt> jobDemandArts, LinkFilter filter, boolean useFilter) throws ParseException, ParserException {
+	private void getContentLinks(String content, List<JobDemandArt> jobDemandArts, LinkFilter filter, boolean useFilter,
+			boolean isRecovery) throws ParseException, ParserException {
 		// 提取出下载网页中的 URL
 		List<TableRow> oddRows = ParseUtils.parseTags(content, TableRow.class, "class", "odd");
 		List<TableRow> evenRows = ParseUtils.parseTags(content, TableRow.class, "class", "even");
@@ -133,32 +135,59 @@ public class TencentHRParser implements BaseParser {
 		for (TableRow row : rows) {
 			String text = row.getStringText();
 			String dateStr = row.getChildren().elementAt(9).toPlainTextString();
-			String lastDateRecord = ConfigService.getInstance().getLastDateRecord(SITE + CommonConstants.LAST_RECORD_DATE, null);
-			if (StringUtils.isBlank(lastDateRecord) || dateStr.compareTo(lastDateRecord) > 0) {
-				if (this.maxDateStr.compareTo(dateStr) < 0) {
-					this.maxDateStr = dateStr;
+			String lastDateRecord = ConfigService.getInstance()
+					.getLastDateRecord(SITE + CommonConstants.LAST_RECORD_DATE, null);
+			if (!isRecovery) {
+				if ((StringUtils.isBlank(lastDateRecord) || dateStr.compareTo(lastDateRecord) > 0)) {
+					if (this.maxDateStr.compareTo(dateStr) < 0) {
+						this.maxDateStr = dateStr;
+					}
+					List<String> conLinks = URLParserTool.fetchLinksFromContent(text, filter, useFilter);
+					String numStr = row.getChildren().elementAt(5).toPlainTextString();
+					String locatStr = row.getChildren().elementAt(7).toPlainTextString();
+					String techStr = row.getChildren().elementAt(3).toPlainTextString();
+					JobDemandArt jobDemandArt = new JobDemandArt();
+					jobDemandArt.setSource(conLinks.get(0));
+					if (StringUtils.isNotBlank(numStr)) {
+						jobDemandArt.setHrNumber(Integer.parseInt(numStr));
+					}
+					if (StringUtils.isNotBlank(locatStr)) {
+						jobDemandArt.setLocation(locatStr);
+					}
+					if (StringUtils.isNotBlank(techStr) && techStr.equals("技术类")) {
+						jobDemandArt.setJobType(JobTypeCnt.TECHNOLOGY);
+					}
+					jobDemandArt.setCreateTime(dateStr);
+					jobDemandArts.add(jobDemandArt);
+				} else {
+					fetchFLag = false;
+					break;
 				}
-				List<String> conLinks = URLParserTool.fetchLinksFromContent(text, filter, useFilter);
-				String numStr = row.getChildren().elementAt(5).toPlainTextString();
-				String locatStr = row.getChildren().elementAt(7).toPlainTextString();
-				String techStr = row.getChildren().elementAt(3).toPlainTextString();
-				JobDemandArt jobDemandArt = new JobDemandArt();
-				jobDemandArt.setSource(conLinks.get(0));
-				if (StringUtils.isNotBlank(numStr)) {
-					jobDemandArt.setHrNumber(Integer.parseInt(numStr));
-				}
-				if (StringUtils.isNotBlank(locatStr)) {
-					jobDemandArt.setLocation(locatStr);
-				}
-				if (StringUtils.isNotBlank(techStr) && techStr.equals("技术类")) {
-					jobDemandArt.setJobType(JobTypeCnt.TECHNOLOGY);
-				}
-				jobDemandArt.setCreateTime(dateStr);
-				jobDemandArts.add(jobDemandArt);
 			} else {
-				fetchFLag = false;
-				break;
+				if (dateStr.compareTo(lastDateRecord) == 0) {
+					List<String> conLinks = URLParserTool.fetchLinksFromContent(text, filter, useFilter);
+					String numStr = row.getChildren().elementAt(5).toPlainTextString();
+					String locatStr = row.getChildren().elementAt(7).toPlainTextString();
+					String techStr = row.getChildren().elementAt(3).toPlainTextString();
+					JobDemandArt jobDemandArt = new JobDemandArt();
+					jobDemandArt.setSource(conLinks.get(0));
+					if (StringUtils.isNotBlank(numStr)) {
+						jobDemandArt.setHrNumber(Integer.parseInt(numStr));
+					}
+					if (StringUtils.isNotBlank(locatStr)) {
+						jobDemandArt.setLocation(locatStr);
+					}
+					if (StringUtils.isNotBlank(techStr) && techStr.equals("技术类")) {
+						jobDemandArt.setJobType(JobTypeCnt.TECHNOLOGY);
+					}
+					jobDemandArt.setCreateTime(dateStr);
+					jobDemandArts.add(jobDemandArt);
+				} else if (dateStr.compareTo(lastDateRecord) < 0) {
+					fetchFLag = false;
+					break;
+				}
 			}
+
 		}
 	}
 

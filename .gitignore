@@ -2,3 +2,8 @@
 .classpath
 /target/
 /bin/
+*.txt
+*.zip
+/build/
+/urlFetchErrors/
+/recovery/

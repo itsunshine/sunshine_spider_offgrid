@@ -1,4 +1,5 @@
 eclipse.preferences.version=1
+encoding//shell/start.sh=utf-8
 encoding//src/com/boliao/sunshine/properties/htmlParseTempConfig.properties=UTF-8
 encoding//templates/jobContent.vm=UTF-8
 encoding/<project>=GBK

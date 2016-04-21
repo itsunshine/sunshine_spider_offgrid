@@ -18,7 +18,7 @@ public interface BaseParser {
 	 * @param content
 	 * @return
 	 */
-	public List<JobDemandArt> getLinks(String content);
+	public List<JobDemandArt> getLinks(String content, boolean isRecovery);
 
 	/**
 	 * 获得页码的内容

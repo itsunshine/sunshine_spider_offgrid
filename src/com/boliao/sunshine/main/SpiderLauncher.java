@@ -177,11 +177,10 @@ public class SpiderLauncher {
 			if (isRecovery) {
 				spiderLauncher.uRLFetcher.setRecoveryMode(true);
 				spiderLauncher.contentFetcher.setRecoveryMode(true);
-				String runDir = System.getProperty(CommonConstants.USER_DIR);
 				ConfigService.isLocalSpecifiedMode = true;
 
 				// 运行目录下的url抓取失败的目录
-				String urlRecoveries = runDir + File.separator + CommonConstants.URL_FETCH_ERROR;
+				String urlRecoveries = baseDir + File.separator + CommonConstants.URL_FETCH_ERROR;
 				File urlErrDirs = new File(urlRecoveries);
 				// 获得目录下的，所有抓取失败的日期文件夹
 				final File[] urlErrs = urlErrDirs.listFiles();
@@ -199,7 +198,7 @@ public class SpiderLauncher {
 					}).start();
 					spiderLauncher.isUrlFetcherLauch = true;
 				}
-				String conRecoveries = runDir + File.separator + CommonConstants.CON_FETCH_ERROR;
+				String conRecoveries = baseDir + File.separator + CommonConstants.CON_FETCH_ERROR;
 				File conErrDirs = new File(conRecoveries);
 				final File[] conErrs = conErrDirs.listFiles();
 				if (conErrs != null && conErrs.length > 0) {

@@ -159,3 +159,51 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
 	... 8 more
+2016-04-13 12:01:08 [main] ERROR ERROR(line-83) 4     - itsunshine抓取数据错误
+java.lang.RuntimeException: 输入参数不对args：[Ljava.lang.String;@245658a3
+	at com.boliao.sunshine.main.SpiderLauncher.printArgumentsAlerts(SpiderLauncher.java:354)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:162)
+2016-04-14 19:04:49 [pool-1-thread-3] ERROR ERROR(line-83) 1159  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-21 11:09:19 [Thread-113] ERROR ERROR(line-83) 30737  - URLFetcher：存储抓取内容的url，出错
+java.lang.IllegalStateException: Queue full
+	at java.util.AbstractQueue.add(AbstractQueue.java:98)
+	at java.util.concurrent.ArrayBlockingQueue.add(ArrayBlockingQueue.java:283)
+	at com.boliao.sunshine.fetchers.URLFetcher.saveContentUrlToFile(URLFetcher.java:220)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$2(URLFetcher.java:202)
+	at com.boliao.sunshine.fetchers.URLFetcher$SaveConUrlWorker.run(URLFetcher.java:518)
+2016-04-21 11:57:56 [pool-1-thread-1] ERROR ERROR(line-83) 698   - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:169)
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:386)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:554)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(String.java:1139)
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:151)
+	... 6 more
+2016-04-21 12:07:03 [pool-1-thread-1] ERROR ERROR(line-83) 7328  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-21 12:07:03 [pool-1-thread-2] ERROR ERROR(line-83) 7669  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)

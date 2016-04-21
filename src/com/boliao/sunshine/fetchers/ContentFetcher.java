@@ -214,8 +214,9 @@ public class ContentFetcher {
 				+ TypeConstants.JOBDEMANDART + File.separator + CommonConstants.filefmt.format(new Date()) + "_"
 				+ TypeConstants.JOBDEMANDART;
 		if (this.isRecoveryMode) {
-			filePath = "recovery" + File.separator + "spider" + File.separator + TypeConstants.JOBDEMANDART
-					+ File.separator + CommonConstants.filefmt.format(new Date()) + "_" + TypeConstants.JOBDEMANDART;
+			filePath = spiderLauncher.baseDir + File.separator + "recovery" + File.separator + "spider" + File.separator
+					+ TypeConstants.JOBDEMANDART + File.separator + CommonConstants.filefmt.format(new Date()) + "_"
+					+ TypeConstants.JOBDEMANDART;
 		}
 		SpiderContext.setJobDemandFile(filePath);
 		try {

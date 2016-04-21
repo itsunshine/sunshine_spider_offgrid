@@ -101,7 +101,7 @@ public class BaiduHRParser2 implements BaseParser {
 	}
 
 	@Override
-	public List<JobDemandArt> getLinks(String htmlContent) {
+	public List<JobDemandArt> getLinks(String htmlContent, boolean isRecovery) {
 		List<JobDemandArt> jobDemandArts = new ArrayList<JobDemandArt>();
 		if (StringUtils.isBlank(htmlContent)) {
 			return jobDemandArts;
@@ -132,26 +132,46 @@ public class BaiduHRParser2 implements BaseParser {
 				String createTime = obj.getString("publishDate");
 				String id = obj.getString("postId");
 				// 判断当前抓取的数据，是否最新，如果不是最新数据，则不再抓取
-				if (StringUtils.isBlank(lastDateRecord) || createTime.compareTo(lastDateRecord) > 0) {
-					// 记录最大的日期
-					if (this.maxDateStr.compareTo(createTime) < 0) {
-						this.maxDateStr = createTime;
+				if (!isRecovery) {
+					if ((StringUtils.isBlank(lastDateRecord) || createTime.compareTo(lastDateRecord) > 0)) {
+						// 记录最大的日期
+						if (this.maxDateStr.compareTo(createTime) < 0) {
+							this.maxDateStr = createTime;
+						}
+						JobDemandArt jobDemandArt = new JobDemandArt();
+						jobDemandArt.setCompanyName(COMPANYNAME);
+						jobDemandArt.setCreateTime(createTime);
+						jobDemandArt.setDepartmentName("");
+						jobDemandArt.setLocation(location);
+						jobDemandArt.setEducation(degree);
+						jobDemandArt.setHrNumber(recuitNumber);
+						jobDemandArt.setTitle(title);
+						jobDemandArt.setContent(content);
+						jobDemandArt.setSource(detailUrl.replace("$id", id));
+						jobDemandArts.add(jobDemandArt);
+					} else {
+						fetchFLag = false;
+						break;
 					}
-					JobDemandArt jobDemandArt = new JobDemandArt();
-					jobDemandArt.setCompanyName(COMPANYNAME);
-					jobDemandArt.setCreateTime(createTime);
-					jobDemandArt.setDepartmentName("");
-					jobDemandArt.setLocation(location);
-					jobDemandArt.setEducation(degree);
-					jobDemandArt.setHrNumber(recuitNumber);
-					jobDemandArt.setTitle(title);
-					jobDemandArt.setContent(content);
-					jobDemandArt.setSource(detailUrl.replace("$id", id));
-					jobDemandArts.add(jobDemandArt);
 				} else {
-					fetchFLag = false;
-					break;
+					if (createTime.compareTo(lastDateRecord) == 0) {
+						JobDemandArt jobDemandArt = new JobDemandArt();
+						jobDemandArt.setCompanyName(COMPANYNAME);
+						jobDemandArt.setCreateTime(createTime);
+						jobDemandArt.setDepartmentName("");
+						jobDemandArt.setLocation(location);
+						jobDemandArt.setEducation(degree);
+						jobDemandArt.setHrNumber(recuitNumber);
+						jobDemandArt.setTitle(title);
+						jobDemandArt.setContent(content);
+						jobDemandArt.setSource(detailUrl.replace("$id", id));
+						jobDemandArts.add(jobDemandArt);
+					} else if (createTime.compareTo(lastDateRecord) < 0) {
+						fetchFLag = false;
+						break;
+					}
 				}
+
 			}
 		} catch (Exception e) {
 			throw new RuntimeException(e);
