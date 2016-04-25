@@ -392,7 +392,7 @@ public class URLFetcher {
 			// 必须先抓取内容的url，再抓page的url
 			contentLinks = parser.getLinks(htmlContent, this.isRecoveryMode);
 		}
-		if (contentLinks == null || contentLinks.isEmpty()) {
+		if ((contentLinks == null || contentLinks.isEmpty()) && !this.isRecoveryMode) {
 			logger.info("the fetched contentLinks are null...");
 			throw new RuntimeException("the contentLinks is null");
 		}

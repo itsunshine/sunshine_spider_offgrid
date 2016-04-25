@@ -3615,3 +3615,564 @@ java.lang.RuntimeException: the contentLinks is null
 2016-04-21 12:07:03 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7672  - the caculator is : 0
 2016-04-21 12:07:03 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7672  - the counter number is : 0
 2016-04-21 12:07:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:11:42 [Thread-77] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:12:17 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 35063  - the fetched contentLinks are null...
+2016-04-22 11:12:17 [pool-1-thread-1] ERROR ERROR(line-83) 35065  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:12:17 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35071  - the caculator is : 0
+2016-04-22 11:12:17 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35072  - the counter number is : 0
+2016-04-22 11:12:17 [Thread-77] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35078  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:12:18 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 35978  - the fetched contentLinks are null...
+2016-04-22 11:12:18 [pool-1-thread-2] ERROR ERROR(line-83) 35978  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:12:18 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35979  - the caculator is : 0
+2016-04-22 11:12:18 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35980  - the counter number is : 0
+2016-04-22 11:21:24 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:21:26 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 1616  - the fetched contentLinks are null...
+2016-04-22 11:21:26 [pool-1-thread-1] ERROR ERROR(line-83) 1617  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:21:26 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1623  - the caculator is : 0
+2016-04-22 11:21:26 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1623  - the counter number is : 0
+2016-04-22 11:21:26 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1626  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:21:27 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 2520  - the fetched contentLinks are null...
+2016-04-22 11:21:27 [pool-1-thread-2] ERROR ERROR(line-83) 2520  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:21:27 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2523  - the caculator is : 0
+2016-04-22 11:21:27 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2523  - the counter number is : 0
+2016-04-22 11:21:27 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2525  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:21:28 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 3200  - the fetched contentLinks are null...
+2016-04-22 11:21:28 [pool-1-thread-3] ERROR ERROR(line-83) 3200  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:21:28 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3201  - the caculator is : 0
+2016-04-22 11:21:28 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3201  - the counter number is : 0
+2016-04-22 11:45:03 [Thread-96] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:45:05 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 1676  - the fetched contentLinks are null...
+2016-04-22 11:45:05 [pool-1-thread-1] ERROR ERROR(line-83) 1677  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:45:05 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1683  - the caculator is : 0
+2016-04-22 11:45:05 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1683  - the counter number is : 0
+2016-04-22 11:45:05 [Thread-96] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1686  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:45:05 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 2508  - the fetched contentLinks are null...
+2016-04-22 11:45:05 [pool-1-thread-2] ERROR ERROR(line-83) 2508  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:45:05 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2510  - the caculator is : 0
+2016-04-22 11:45:05 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2510  - the counter number is : 0
+2016-04-22 11:45:05 [Thread-96] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2512  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:45:06 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-396) 3308  - the fetched contentLinks are null...
+2016-04-22 11:45:06 [pool-1-thread-3] ERROR ERROR(line-83) 3308  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: the contentLinks is null
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:397)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+2016-04-22 11:45:06 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3309  - the caculator is : 0
+2016-04-22 11:45:06 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3310  - the counter number is : 0
+2016-04-22 11:47:23 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:47:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1689  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1689  - the caculator is : 0
+2016-04-22 11:47:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1690  - the counter number is : 0
+2016-04-22 11:47:24 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1690  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 11:47:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2562  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2562  - the caculator is : 0
+2016-04-22 11:47:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2562  - the counter number is : 0
+2016-04-22 11:47:25 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2562  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-22 11:47:26 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3420  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:26 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3421  - the caculator is : 0
+2016-04-22 11:47:26 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3421  - the counter number is : 0
+2016-04-22 11:47:26 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3421  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 11:47:27 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4131  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:27 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4131  - the caculator is : 0
+2016-04-22 11:47:27 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4131  - the counter number is : 0
+2016-04-22 11:47:27 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4132  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 11:47:28 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4924  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:28 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4930  - the caculator is : 0
+2016-04-22 11:47:28 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4930  - the counter number is : 0
+2016-04-22 11:47:28 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4930  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 11:47:28 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5653  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:28 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5653  - the caculator is : 0
+2016-04-22 11:47:28 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5653  - the counter number is : 0
+2016-04-22 11:47:28 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5654  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 11:47:29 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6393  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:29 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6394  - the caculator is : 0
+2016-04-22 11:47:29 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6394  - the counter number is : 0
+2016-04-22 11:47:29 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6394  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 11:47:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7164  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7165  - the caculator is : 0
+2016-04-22 11:47:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7165  - the counter number is : 0
+2016-04-22 11:47:30 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7165  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 11:47:31 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8050  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:31 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8051  - the caculator is : 0
+2016-04-22 11:47:31 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8051  - the counter number is : 0
+2016-04-22 11:47:31 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8051  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-22 11:47:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8622  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8622  - the caculator is : 0
+2016-04-22 11:47:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8622  - the counter number is : 0
+2016-04-22 11:47:31 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8625  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:47:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9273  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9273  - the caculator is : 0
+2016-04-22 11:47:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9273  - the counter number is : 0
+2016-04-22 11:47:32 [Thread-70] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9276  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:47:32 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9794  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:47:32 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9794  - the caculator is : 0
+2016-04-22 11:47:32 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9794  - the counter number is : 0
+2016-04-22 11:49:22 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:52:56 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 214351  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:53:40 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 258285  - the caculator is : 0
+2016-04-22 11:53:40 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 258285  - the counter number is : 0
+2016-04-22 11:53:40 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 258286  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 11:55:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 339370  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 339371  - the caculator is : 0
+2016-04-22 11:55:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 339371  - the counter number is : 0
+2016-04-22 11:55:01 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 339372  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 11:55:30 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 367660  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:30 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 367660  - the caculator is : 0
+2016-04-22 11:55:30 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 367661  - the counter number is : 0
+2016-04-22 11:55:30 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 367661  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 11:55:30 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 368481  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:30 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 368481  - the caculator is : 0
+2016-04-22 11:55:30 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 368482  - the counter number is : 0
+2016-04-22 11:55:30 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 368483  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 11:55:31 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 369324  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:31 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 369324  - the caculator is : 0
+2016-04-22 11:55:31 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 369324  - the counter number is : 0
+2016-04-22 11:55:31 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 369325  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 11:55:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370085  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370085  - the caculator is : 0
+2016-04-22 11:55:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370085  - the counter number is : 0
+2016-04-22 11:55:32 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370086  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 11:55:33 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370689  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:33 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370689  - the caculator is : 0
+2016-04-22 11:55:33 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370689  - the counter number is : 0
+2016-04-22 11:55:33 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 370689  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 11:55:33 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 371563  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:33 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 371564  - the caculator is : 0
+2016-04-22 11:55:33 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 371564  - the counter number is : 0
+2016-04-22 11:55:33 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 371565  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-22 11:55:34 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 372163  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:34 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 372163  - the caculator is : 0
+2016-04-22 11:55:34 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 372163  - the counter number is : 0
+2016-04-22 11:55:34 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 372167  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:55:35 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373105  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:35 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373106  - the caculator is : 0
+2016-04-22 11:55:35 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373106  - the counter number is : 0
+2016-04-22 11:55:35 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373108  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:55:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373596  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:55:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373596  - the caculator is : 0
+2016-04-22 11:55:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 373596  - the counter number is : 0
+2016-04-22 11:57:30 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:57:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5857  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5857  - the caculator is : 0
+2016-04-22 11:57:36 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5858  - the counter number is : 0
+2016-04-22 11:57:36 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5858  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 11:57:36 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6728  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:36 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6728  - the caculator is : 0
+2016-04-22 11:57:36 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6728  - the counter number is : 0
+2016-04-22 11:57:36 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6729  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-22 11:57:37 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7490  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:37 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7490  - the caculator is : 0
+2016-04-22 11:57:37 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7491  - the counter number is : 0
+2016-04-22 11:57:37 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7491  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 11:57:38 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8224  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:38 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8224  - the caculator is : 0
+2016-04-22 11:57:38 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8224  - the counter number is : 0
+2016-04-22 11:57:38 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8225  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 11:57:40 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10171  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:40 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10171  - the caculator is : 0
+2016-04-22 11:57:40 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10172  - the counter number is : 0
+2016-04-22 11:57:40 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10172  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 11:57:41 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10868  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:41 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10869  - the caculator is : 0
+2016-04-22 11:57:41 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10869  - the counter number is : 0
+2016-04-22 11:57:41 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10869  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 11:57:41 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11656  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:41 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11656  - the caculator is : 0
+2016-04-22 11:57:41 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11656  - the counter number is : 0
+2016-04-22 11:57:41 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11657  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 11:57:42 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12310  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:42 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12310  - the caculator is : 0
+2016-04-22 11:57:42 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12310  - the counter number is : 0
+2016-04-22 11:57:42 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12311  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 11:57:43 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12949  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:43 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12950  - the caculator is : 0
+2016-04-22 11:57:43 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12950  - the counter number is : 0
+2016-04-22 11:57:43 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12950  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-22 11:57:43 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13510  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:43 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13510  - the caculator is : 0
+2016-04-22 11:57:43 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13510  - the counter number is : 0
+2016-04-22 11:57:43 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13513  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:57:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14235  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14235  - the caculator is : 0
+2016-04-22 11:57:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14236  - the counter number is : 0
+2016-04-22 11:57:44 [Thread-101] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14238  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:57:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14796  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:57:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14796  - the caculator is : 0
+2016-04-22 11:57:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14796  - the counter number is : 0
+2016-04-22 11:58:45 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:58:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1533  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1533  - the caculator is : 0
+2016-04-22 11:58:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1534  - the counter number is : 0
+2016-04-22 11:58:46 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1534  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 11:58:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2305  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2305  - the caculator is : 0
+2016-04-22 11:58:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2306  - the counter number is : 0
+2016-04-22 11:58:47 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2306  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-22 11:58:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3039  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3040  - the caculator is : 0
+2016-04-22 11:58:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3040  - the counter number is : 0
+2016-04-22 11:58:48 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3040  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 11:58:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3670  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3670  - the caculator is : 0
+2016-04-22 11:58:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3670  - the counter number is : 0
+2016-04-22 11:58:49 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3671  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 11:58:49 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4347  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:49 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4347  - the caculator is : 0
+2016-04-22 11:58:49 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4347  - the counter number is : 0
+2016-04-22 11:58:49 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4347  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 11:58:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5013  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5013  - the caculator is : 0
+2016-04-22 11:58:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5013  - the counter number is : 0
+2016-04-22 11:58:50 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5014  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 11:58:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5623  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5623  - the caculator is : 0
+2016-04-22 11:58:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5623  - the counter number is : 0
+2016-04-22 11:58:50 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5623  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 11:58:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6241  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6242  - the caculator is : 0
+2016-04-22 11:58:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6242  - the counter number is : 0
+2016-04-22 11:58:51 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6242  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 11:58:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8258  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8258  - the caculator is : 0
+2016-04-22 11:58:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8259  - the counter number is : 0
+2016-04-22 11:58:53 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8259  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-22 11:58:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10132  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10132  - the caculator is : 0
+2016-04-22 11:58:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10133  - the counter number is : 0
+2016-04-22 11:58:55 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10134  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:58:56 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10740  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:56 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10740  - the caculator is : 0
+2016-04-22 11:58:56 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10740  - the counter number is : 0
+2016-04-22 11:58:56 [Thread-51] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10741  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 11:58:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11333  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 11:58:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11333  - the caculator is : 0
+2016-04-22 11:58:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11334  - the counter number is : 0
+2016-04-22 12:02:05 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 12:02:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2253  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2253  - the caculator is : 0
+2016-04-22 12:02:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2254  - the counter number is : 0
+2016-04-22 12:02:07 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2254  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 12:02:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3091  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3091  - the caculator is : 0
+2016-04-22 12:02:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3092  - the counter number is : 0
+2016-04-22 12:02:08 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3092  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-22 12:02:09 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3879  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:09 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3880  - the caculator is : 0
+2016-04-22 12:02:09 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3880  - the counter number is : 0
+2016-04-22 12:02:09 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3880  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 12:02:10 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4590  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:10 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4591  - the caculator is : 0
+2016-04-22 12:02:10 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4591  - the counter number is : 0
+2016-04-22 12:02:10 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4592  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 12:02:10 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5359  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:10 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5360  - the caculator is : 0
+2016-04-22 12:02:10 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5360  - the counter number is : 0
+2016-04-22 12:02:10 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5360  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 12:02:11 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6130  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:11 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6131  - the caculator is : 0
+2016-04-22 12:02:11 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6131  - the counter number is : 0
+2016-04-22 12:02:11 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6131  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 12:02:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8276  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8277  - the caculator is : 0
+2016-04-22 12:02:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8277  - the counter number is : 0
+2016-04-22 12:02:13 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8277  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 12:02:15 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10393  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:02:15 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10393  - the caculator is : 0
+2016-04-22 12:02:15 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10394  - the counter number is : 0
+2016-04-22 12:02:15 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10394  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 12:03:44 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 98626  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:12 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 126717  - the caculator is : 0
+2016-04-22 12:04:12 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 126717  - the counter number is : 0
+2016-04-22 12:04:12 [Thread-91] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 126718  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631
+2016-04-22 12:04:43 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 12:04:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1623  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1623  - the caculator is : 0
+2016-04-22 12:04:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1623  - the counter number is : 0
+2016-04-22 12:04:44 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1624  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-22 12:04:45 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2522  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:45 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2522  - the caculator is : 0
+2016-04-22 12:04:45 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2523  - the counter number is : 0
+2016-04-22 12:04:45 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2523  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-22 12:04:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3352  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3352  - the caculator is : 0
+2016-04-22 12:04:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3352  - the counter number is : 0
+2016-04-22 12:04:46 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3353  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-22 12:04:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4176  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4177  - the caculator is : 0
+2016-04-22 12:04:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4177  - the counter number is : 0
+2016-04-22 12:04:47 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4178  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-22 12:04:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5466  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5467  - the caculator is : 0
+2016-04-22 12:04:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5467  - the counter number is : 0
+2016-04-22 12:04:48 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5467  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-22 12:04:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6222  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6222  - the caculator is : 0
+2016-04-22 12:04:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6223  - the counter number is : 0
+2016-04-22 12:04:49 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6223  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-22 12:04:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6880  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6880  - the caculator is : 0
+2016-04-22 12:04:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6880  - the counter number is : 0
+2016-04-22 12:04:50 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6881  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-22 12:04:50 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7550  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:04:50 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7551  - the caculator is : 0
+2016-04-22 12:04:50 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7551  - the counter number is : 0
+2016-04-22 12:04:50 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7551  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-22 12:05:19 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35793  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:05:19 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35794  - the caculator is : 0
+2016-04-22 12:05:19 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35794  - the counter number is : 0
+2016-04-22 12:05:19 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35794  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-22 12:07:12 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 149428  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:07:37 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 173776  - the caculator is : 0
+2016-04-22 12:07:46 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 183666  - the counter number is : 0
+2016-04-22 12:07:46 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 183671  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 12:08:05 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 202709  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:08:11 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 208661  - the caculator is : 0
+2016-04-22 12:08:13 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 210185  - the counter number is : 0
+2016-04-22 12:08:13 [Thread-55] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 210188  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-22 12:08:30 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 227435  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-22 12:08:30 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 227437  - the caculator is : 0
+2016-04-22 12:08:30 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 227437  - the counter number is : 0
+2016-04-25 11:03:20 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:03:22 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2231  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:22 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2232  - the caculator is : 0
+2016-04-25 11:03:22 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2233  - the counter number is : 0
+2016-04-25 11:03:22 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2233  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-25 11:03:26 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6270  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:26 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6271  - the caculator is : 0
+2016-04-25 11:03:26 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6271  - the counter number is : 0
+2016-04-25 11:03:26 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6271  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-25 11:03:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7058  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7058  - the caculator is : 0
+2016-04-25 11:03:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7058  - the counter number is : 0
+2016-04-25 11:03:27 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7058  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-25 11:03:28 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7909  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:28 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7910  - the caculator is : 0
+2016-04-25 11:03:28 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7910  - the counter number is : 0
+2016-04-25 11:03:28 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7911  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-25 11:03:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8780  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8780  - the caculator is : 0
+2016-04-25 11:03:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8781  - the counter number is : 0
+2016-04-25 11:03:29 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8781  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-25 11:03:29 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9433  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:29 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9434  - the caculator is : 0
+2016-04-25 11:03:29 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9434  - the counter number is : 0
+2016-04-25 11:03:29 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9434  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-25 11:03:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10093  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10093  - the caculator is : 0
+2016-04-25 11:03:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10093  - the counter number is : 0
+2016-04-25 11:03:30 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10094  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-25 11:03:31 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11422  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:31 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11424  - the caculator is : 0
+2016-04-25 11:03:31 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11425  - the counter number is : 0
+2016-04-25 11:03:31 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11425  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-25 11:03:32 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12188  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:32 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12188  - the caculator is : 0
+2016-04-25 11:03:32 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12189  - the counter number is : 0
+2016-04-25 11:03:32 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12189  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-25 11:03:33 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13055  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:33 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13058  - the caculator is : 0
+2016-04-25 11:03:33 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13058  - the counter number is : 0
+2016-04-25 11:03:33 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13058  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631
+2016-04-25 11:03:34 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13588  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:34 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13589  - the caculator is : 0
+2016-04-25 11:03:34 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13589  - the counter number is : 0
+2016-04-25 11:03:34 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13589  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631
+2016-04-25 11:03:34 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14045  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:34 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14046  - the caculator is : 0
+2016-04-25 11:03:34 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14046  - the counter number is : 0
+2016-04-25 11:03:52 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31684  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:03:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32473  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:03:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32473  - the caculator is : 0
+2016-04-25 11:03:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32473  - the counter number is : 0
+2016-04-25 11:04:14 [Thread-111] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 54309  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:04:15 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 55406  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:04:15 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 55407  - the caculator is : 0
+2016-04-25 11:04:15 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 55407  - the counter number is : 0
+2016-04-25 11:23:36 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:23:37 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1879  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:37 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1880  - the caculator is : 0
+2016-04-25 11:23:37 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1881  - the counter number is : 0
+2016-04-25 11:23:37 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1881  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-25 11:23:38 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2861  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:38 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2862  - the caculator is : 0
+2016-04-25 11:23:38 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2862  - the counter number is : 0
+2016-04-25 11:23:38 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2862  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-25 11:23:39 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3699  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:39 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3700  - the caculator is : 0
+2016-04-25 11:23:39 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3700  - the counter number is : 0
+2016-04-25 11:23:39 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3700  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-25 11:23:40 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4749  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:40 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4752  - the caculator is : 0
+2016-04-25 11:23:40 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4752  - the counter number is : 0
+2016-04-25 11:23:40 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4754  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-25 11:23:41 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5746  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:41 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5746  - the caculator is : 0
+2016-04-25 11:23:41 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5747  - the counter number is : 0
+2016-04-25 11:23:41 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5747  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-25 11:23:42 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6848  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:42 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6848  - the caculator is : 0
+2016-04-25 11:23:42 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6848  - the counter number is : 0
+2016-04-25 11:23:42 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6848  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-25 11:23:43 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7802  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:43 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7802  - the caculator is : 0
+2016-04-25 11:23:43 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7802  - the counter number is : 0
+2016-04-25 11:23:43 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7802  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-25 11:23:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11846  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11847  - the caculator is : 0
+2016-04-25 11:23:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11848  - the counter number is : 0
+2016-04-25 11:23:47 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11848  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-25 11:23:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12946  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12947  - the caculator is : 0
+2016-04-25 11:23:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12947  - the counter number is : 0
+2016-04-25 11:23:49 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12947  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-25 11:23:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13662  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13663  - the caculator is : 0
+2016-04-25 11:23:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13663  - the counter number is : 0
+2016-04-25 11:23:49 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13663  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631
+2016-04-25 11:23:50 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14415  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:50 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14415  - the caculator is : 0
+2016-04-25 11:23:50 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14416  - the counter number is : 0
+2016-04-25 11:23:50 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14416  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631
+2016-04-25 11:23:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14782  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14782  - the caculator is : 0
+2016-04-25 11:23:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14782  - the counter number is : 0
+2016-04-25 11:23:50 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14786  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:23:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15620  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15621  - the caculator is : 0
+2016-04-25 11:23:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15621  - the counter number is : 0
+2016-04-25 11:23:51 [Thread-11] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15624  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:23:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16354  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:23:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16354  - the caculator is : 0
+2016-04-25 11:23:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16355  - the counter number is : 0
+2016-04-25 11:30:06 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:30:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1449  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1449  - the caculator is : 0
+2016-04-25 11:30:07 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1450  - the counter number is : 0
+2016-04-25 11:30:07 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1450  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-04-25 11:30:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2267  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2267  - the caculator is : 0
+2016-04-25 11:30:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2268  - the counter number is : 0
+2016-04-25 11:30:08 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2268  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-04-25 11:30:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2788  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2789  - the caculator is : 0
+2016-04-25 11:30:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2789  - the counter number is : 0
+2016-04-25 11:30:08 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2789  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-04-25 11:30:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3568  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3568  - the caculator is : 0
+2016-04-25 11:30:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3568  - the counter number is : 0
+2016-04-25 11:30:09 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3569  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-04-25 11:30:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5603  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5603  - the caculator is : 0
+2016-04-25 11:30:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5603  - the counter number is : 0
+2016-04-25 11:30:11 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5604  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-04-25 11:30:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6180  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6180  - the caculator is : 0
+2016-04-25 11:30:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6181  - the counter number is : 0
+2016-04-25 11:30:12 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6181  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-04-25 11:30:12 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6714  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:12 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6714  - the caculator is : 0
+2016-04-25 11:30:12 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6715  - the counter number is : 0
+2016-04-25 11:30:12 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6715  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-04-25 11:30:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7333  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7333  - the caculator is : 0
+2016-04-25 11:30:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7333  - the counter number is : 0
+2016-04-25 11:30:13 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7334  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-04-25 11:30:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7774  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7775  - the caculator is : 0
+2016-04-25 11:30:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7775  - the counter number is : 0
+2016-04-25 11:30:13 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7775  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-04-25 11:30:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8368  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8369  - the caculator is : 0
+2016-04-25 11:30:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8369  - the counter number is : 0
+2016-04-25 11:30:14 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8369  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631
+2016-04-25 11:30:14 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8775  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:14 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8775  - the caculator is : 0
+2016-04-25 11:30:14 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8776  - the counter number is : 0
+2016-04-25 11:30:14 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8776  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631
+2016-04-25 11:30:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9222  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9222  - the caculator is : 0
+2016-04-25 11:30:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9223  - the counter number is : 0
+2016-04-25 11:30:15 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9225  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:30:15 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9628  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:15 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9628  - the caculator is : 0
+2016-04-25 11:30:15 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9629  - the counter number is : 0
+2016-04-25 11:30:15 [Thread-52] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9629  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-04-25 11:30:16 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10259  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-04-25 11:30:16 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10260  - the caculator is : 0
+2016-04-25 11:30:16 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10261  - the counter number is : 0
+2016-04-25 11:30:16 [main] INFO  com.boliao.sunshine.main.SpiderLauncher(line-42) 10261  - the deleted urlFile is : /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/urlFetchErrors/20160414
+2016-04-25 11:30:16 [main] INFO  com.boliao.sunshine.main.SpiderLauncher(line-42) 10262  - the deleted urlFile is : /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/urlFetchErrors/20160421
+2016-04-25 11:30:16 [main] INFO  com.boliao.sunshine.main.SpiderLauncher(line-42) 10263  - the deleted urlFile is : /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/urlFetchErrors/20160422
+2016-04-25 11:30:16 [main] ERROR ERROR(line-83) 10434  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:68)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:255)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more

@@ -197,7 +197,9 @@ public class SpiderLauncher {
 
 					}).start();
 					spiderLauncher.isUrlFetcherLauch = true;
+					spiderLauncher.waitLauncher();
 				}
+
 				String conRecoveries = baseDir + File.separator + CommonConstants.CON_FETCH_ERROR;
 				File conErrDirs = new File(conRecoveries);
 				final File[] conErrs = conErrDirs.listFiles();
@@ -213,8 +215,8 @@ public class SpiderLauncher {
 						}
 
 					}).start();
+					spiderLauncher.waitLauncher();
 				}
-				spiderLauncher.waitLauncher();
 				while (true) {
 					// 如果url抓取工作已经完成，就删除掉之前抓取失败的日志文件;如果内容抓取的工作已经完成，就删除之前抓取失败的日志文件
 					if (spiderLauncher.uRLFetcher.isURLFetchDone()
@@ -291,7 +293,7 @@ public class SpiderLauncher {
 			fr.close();
 			br.close();
 		}
-		this.increateOrNotify();
+		this.notifyLauncher();
 	}
 
 	/**
@@ -327,7 +329,7 @@ public class SpiderLauncher {
 		}
 		this.uRLFetcher.getExecutor().shutdown();
 		resultQueue.add(new JobDemandArtEnd());
-		this.increateOrNotify();
+		this.notifyLauncher();
 	}
 
 	/**
