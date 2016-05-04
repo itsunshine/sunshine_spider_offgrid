@@ -21,6 +21,9 @@ public class CommonConstants {
 	// 文件格式的日期字符串
 	public static final SimpleDateFormat filefmt = new SimpleDateFormat("yyyyMMdd");
 
+	// 更新日期字符串格式化工具
+	public static final SimpleDateFormat recordDatefmt = new SimpleDateFormat("yyyy-MM-dd");
+
 	// ibm host
 	public static final String IBM = "www.ibm.com";
 

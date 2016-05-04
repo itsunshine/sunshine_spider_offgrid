@@ -480,14 +480,15 @@ public class URLFetcher {
 				FileUtils.createFile(dtErrFile);
 				// 进行错误文件记录
 				FileWriter fw = new FileWriter(urlErrFile, true);
-				fw.write(CommonConstants.ENTER_STR + url);
+				fw.write(url + CommonConstants.ENTER_STR);
 				fw.flush();
 				fw.close();
-				fw = new FileWriter(dtErrFile);
+				fw = new FileWriter(dtErrFile, true);
 				BaseParser baseParser = this.queryParser(url);
-				fw.write(StringUtils.defaultIfEmpty(
-						baseParser.getSite() + CommonConstants.LAST_RECORD_DATE + "=" + baseParser.getLastDateStr(),
-						StringUtils.EMPTY));
+				fw.write(StringUtils
+						.defaultIfEmpty(baseParser.getSite() + CommonConstants.LAST_RECORD_DATE + "="
+								+ baseParser.getLastDateStr(), CommonConstants.recordDatefmt.format(new Date()))
+						+ CommonConstants.ENTER_STR);
 				fw.flush();
 				fw.close();
 			} catch (IOException e) {

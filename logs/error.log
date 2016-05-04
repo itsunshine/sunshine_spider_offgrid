@@ -292,3 +292,37 @@ Caused by: java.net.ConnectException: Connection refused
 	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
 	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
 	... 8 more
+2016-05-04 11:16:54 [pool-1-thread-1] ERROR ERROR(line-83) 713   - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:177)
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:386)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:367)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:556)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(String.java:1139)
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:157)
+	... 6 more
+2016-05-04 11:16:56 [main] ERROR ERROR(line-83) 2813  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:70)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:255)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more
