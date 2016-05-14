@@ -115,6 +115,13 @@ public class URLFetcher {
 			URLFetchWorker worker = new URLFetchWorker();
 			workers.add(worker);
 		}
+
+	}
+
+	/**
+	 * 初始化urlFetcher的文件
+	 */
+	public void initializeURLFetcher() {
 		for (String url : parserMap.keySet()) {
 			String filePath = spiderLauncher.baseDir + File.separator + CommonConstants.SEEDS_DIR + url + File.separator
 					+ CommonConstants.filefmt.format(new Date()) + ".txt";
@@ -165,6 +172,7 @@ public class URLFetcher {
 	 */
 	public BlockingQueue<JobDemandArt> spideUrls(String[] seeds, String dateRecordFile) throws Exception {
 		// 初始化种子链表
+		this.initializeURLFetcher();
 		initCrawlerWithSeeds(seeds);
 		ArrayBlockingQueue<JobDemandArt> tmpResultQueue = new ArrayBlockingQueue<JobDemandArt>(1000);
 		new SaveConUrlWorker(tmpResultQueue, resultQueue).start();

@@ -33,7 +33,7 @@ public class SendFile {
 		// uploadFile("http://www.itsunshine.net/views/upload.do",
 		// "/Users/liaobo/workspace_j2ee/sunshine/upload.ebooks");
 		uploadFile("http://www.itsunshine.net/views/upload.do",
-				"/Users/liaobo/zip/spider/spider/jobDemandArt/20160428_jobDemandArtG");
+				"/Users/liaobo/zip/spider/spider/jobDemandArt/20160512_jobDemandArt");
 	}
 
 	/**

@@ -146,7 +146,7 @@ public class ContentFetcher {
 				// 进行错误文件记录
 				FileWriter fw = new FileWriter(conErrFile, true);
 				JSONObject jobj = JSONObject.fromObject(jobDemandArt);
-				fw.write(CommonConstants.ENTER_STR + jobj.toString());
+				fw.write(jobj.toString() + CommonConstants.ENTER_STR);
 				fw.flush();
 				fw.close();
 			} catch (IOException e) {
@@ -204,7 +204,7 @@ public class ContentFetcher {
 	/**
 	 * 初始化线程对象池
 	 */
-	private void initWorkers() {
+	public void initWorkers() {
 		for (int i = 0; i < THREADE_POOL_SIZE; i++) {
 			ConFetchWorker worker = new ConFetchWorker();
 			workers.add(worker);

@@ -4223,3 +4223,83 @@ Caused by: java.net.ConnectException: Connection refused
 2016-05-04 11:18:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2237  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
 2016-05-04 11:18:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2238  - the caculator is : 1
 2016-05-04 11:18:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2238  - the counter number is : 1
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 0     - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/spider/data/jobDemandArt/20160428_jobDemandArtG (No such file or directory)
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 4     - Retrying request
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 119   - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/spider/data/jobDemandArt/20160428_jobDemandArtG (No such file or directory)
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 122   - Retrying request
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 238   - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/spider/data/jobDemandArt/20160428_jobDemandArtG (No such file or directory)
+2016-05-05 10:24:14 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 238   - Retrying request
+2016-05-05 10:45:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-05-05 10:45:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5     - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-05 10:45:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3227  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-05 10:45:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3227  - the caculator is : 1
+2016-05-05 10:45:15 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3227  - the counter number is : 1
+2016-05-05 10:45:29 [pool-1-thread-1] ERROR ERROR(line-83) 16582  - 抓取url出错，请详查，url：http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+java.lang.RuntimeException: java.lang.NullPointerException
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:177)
+	at com.boliao.sunshine.fetchers.URLFetcher.fetchUrl(URLFetcher.java:394)
+	at com.boliao.sunshine.fetchers.URLFetcher.access$6(URLFetcher.java:375)
+	at com.boliao.sunshine.fetchers.URLFetcher$URLFetchWorker.run(URLFetcher.java:565)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1145)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:615)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at java.lang.String.compareTo(String.java:1139)
+	at com.boliao.sunshine.parsers.BaiduHRParser2.getLinks(BaiduHRParser2.java:157)
+	... 6 more
+2016-05-05 10:45:29 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16587  - the caculator is : 0
+2016-05-05 10:45:29 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16587  - the counter number is : 0
+2016-05-05 10:45:30 [main] INFO  com.boliao.sunshine.main.SpiderLauncher(line-42) 17593  - the deleted urlFile is : /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/urlFetchErrors/20160504
+2016-05-05 10:45:30 [main] ERROR ERROR(line-83) 17813  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:70)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:255)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more
+2016-05-05 10:47:40 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-05-05 10:47:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4287  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-05-05 10:47:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4288  - the caculator is : 0
+2016-05-05 10:47:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4289  - the counter number is : 0
+2016-05-05 10:47:44 [main] INFO  com.boliao.sunshine.main.SpiderLauncher(line-42) 4291  - the deleted urlFile is : /Users/liaobo/workspace_j2ee/sunshine_spider_offgrid/urlFetchErrors/20160505
+2016-05-05 10:47:44 [main] ERROR ERROR(line-83) 4474  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:70)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:255)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 0     - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/data/spider/jobDemandArt/20160512_jobDemandArt (No such file or directory)
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 7     - Retrying request
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 118   - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/data/spider/jobDemandArt/20160512_jobDemandArt (No such file or directory)
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 119   - Retrying request
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 230   - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/data/spider/jobDemandArt/20160512_jobDemandArt (No such file or directory)
+2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 230   - Retrying request
