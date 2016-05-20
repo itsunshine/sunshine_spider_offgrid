@@ -255,6 +255,8 @@ public class SpiderLauncher {
 					uploadResult = SendFile.uploadFile(CommonConstants.UPLOAD_URL, jobDemandFile.getAbsolutePath());
 				} catch (Exception e) {
 					LogUtil.error(errorLogger, "itsunshine招聘信息数据，上传失败", e);
+					// 发生错误直接退出
+					System.exit(0);
 					// 如果抓取失败，就休眠10分钟后，再次抓取
 					Thread.sleep(1000 * 60 * 10);
 				}
