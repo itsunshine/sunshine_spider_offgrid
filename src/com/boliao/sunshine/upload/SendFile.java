@@ -30,10 +30,9 @@ public class SendFile {
 		// "D:\\workspace\\sunshine\\upload.docs");
 		// uploadFile("http://localhost:8989/sunshine_new/views/upload.do",
 		// "D:\\workspace\\sunshine\\upload.ebooks");
+		uploadFile("http://www.itsunshine.net/views/upload.do", "/Users/liaobo/workspace_j2ee/sunshine/upload.ebooks");
 		// uploadFile("http://www.itsunshine.net/views/upload.do",
-		// "/Users/liaobo/workspace_j2ee/sunshine/upload.ebooks");
-		uploadFile("http://www.itsunshine.net/views/upload.do",
-				"/Users/liaobo/zip/spider/spider/jobDemandArt/20160512_jobDemandArt");
+		// "/Users/liaobo/zip/data/spider/jobDemandArt/20160602_jobDemandArt");
 	}
 
 	/**

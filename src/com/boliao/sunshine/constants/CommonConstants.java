@@ -13,7 +13,7 @@ import com.boliao.sunshine.parsers.TencentHRParser;
 /**
  * 普通常量类
  * 
- * @author Liaobo
+ * @author Liaobo 1、数据接入平台 2、容器化 3、机器学习平台 4、队列技术
  * 
  */
 public class CommonConstants {

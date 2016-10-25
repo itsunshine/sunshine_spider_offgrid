@@ -20,7 +20,6 @@ import org.apache.log4j.Logger;
 import com.boliao.sunshine.biz.model.JobDemandArt;
 import com.boliao.sunshine.biz.model.JobDemandArtEnd;
 import com.boliao.sunshine.biz.utils.FileUtils;
-import com.boliao.sunshine.biz.utils.KenZip;
 import com.boliao.sunshine.biz.utils.LogUtil;
 import com.boliao.sunshine.config.ConfigService;
 import com.boliao.sunshine.constants.CommonConstants;
@@ -248,7 +247,7 @@ public class SpiderLauncher {
 			File jobDemandFile = new File(SpiderContext.getJobDemandFile());
 			// File jobDemandFile = new
 			// File("D:/workspace/spiderServiceUtil/recovery/spider/jobDemandArt/20150502_jobDemandArt");
-			KenZip.zip(jobDemandFile.getName(), jobDemandFile);
+			// KenZip.zip(jobDemandFile.getName(), jobDemandFile);
 			boolean uploadResult = false;
 			while (!uploadResult) {
 				try {

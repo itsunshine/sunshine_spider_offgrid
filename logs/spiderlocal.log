@@ -4303,3 +4303,884 @@ Caused by: java.net.ConnectException: Connection refused
 2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 119   - Retrying request
 2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-491) 230   - I/O exception (java.io.FileNotFoundException) caught when processing request: /Users/liaobo/zip/data/spider/jobDemandArt/20160512_jobDemandArt (No such file or directory)
 2016-05-12 18:09:15 [main] INFO  org.apache.http.impl.client.DefaultHttpClient(line-498) 230   - Retrying request
+2016-05-20 11:11:43 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 0     - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=0#a
+2016-05-20 11:11:43 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7     - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:43 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7     - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631
+2016-05-20 11:11:44 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1514  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=1&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:44 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1515  - the caculator is : 2
+2016-05-20 11:11:44 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1516  - the counter number is : 2
+2016-05-20 11:11:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1834  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=0#a is fetched done.
+2016-05-20 11:11:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1836  - the caculator is : 1
+2016-05-20 11:11:44 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1837  - the counter number is : 1
+2016-05-20 11:11:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1846  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=1&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1847  - the caculator is : 0
+2016-05-20 11:11:44 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1847  - the counter number is : 0
+2016-05-20 11:11:44 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1847  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631
+2016-05-20 11:11:44 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1848  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=10#a
+2016-05-20 11:11:44 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 1848  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=2&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:45 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2142  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=10#a is fetched done.
+2016-05-20 11:11:45 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2154  - the caculator is : 2
+2016-05-20 11:11:45 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2154  - the counter number is : 2
+2016-05-20 11:11:45 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2400  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=2&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:45 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2401  - the caculator is : 1
+2016-05-20 11:11:45 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2401  - the counter number is : 1
+2016-05-20 11:11:45 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2725  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=2&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:45 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2730  - the caculator is : 0
+2016-05-20 11:11:45 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2731  - the counter number is : 0
+2016-05-20 11:11:45 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2736  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=20#a
+2016-05-20 11:11:45 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2737  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631
+2016-05-20 11:11:45 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2737  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=3&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:45 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2961  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=20#a is fetched done.
+2016-05-20 11:11:45 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2962  - the caculator is : 2
+2016-05-20 11:11:45 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 2962  - the counter number is : 2
+2016-05-20 11:11:46 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3033  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=3&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:46 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3033  - the caculator is : 1
+2016-05-20 11:11:46 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3034  - the counter number is : 1
+2016-05-20 11:11:46 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3346  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=3&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:46 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3347  - the caculator is : 0
+2016-05-20 11:11:46 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3347  - the counter number is : 0
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3347  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=30#a
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3348  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3348  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=4&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:46 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3566  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=30#a is fetched done.
+2016-05-20 11:11:46 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3567  - the caculator is : 2
+2016-05-20 11:11:46 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3568  - the counter number is : 2
+2016-05-20 11:11:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3596  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=4&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3596  - the caculator is : 1
+2016-05-20 11:11:46 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3596  - the counter number is : 1
+2016-05-20 11:11:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3954  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=4&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3955  - the caculator is : 0
+2016-05-20 11:11:46 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3955  - the counter number is : 0
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3955  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=40#a
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3955  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631
+2016-05-20 11:11:46 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 3955  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=5&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:47 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4153  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=5&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4154  - the caculator is : 2
+2016-05-20 11:11:47 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4154  - the counter number is : 2
+2016-05-20 11:11:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4199  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=40#a is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4199  - the caculator is : 1
+2016-05-20 11:11:47 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4199  - the counter number is : 1
+2016-05-20 11:11:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4423  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=5&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4423  - the caculator is : 0
+2016-05-20 11:11:47 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4423  - the counter number is : 0
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4427  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4427  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=50#a
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4427  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=6&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:47 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4659  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=50#a is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4660  - the caculator is : 2
+2016-05-20 11:11:47 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4660  - the counter number is : 2
+2016-05-20 11:11:47 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4676  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=6&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4676  - the caculator is : 1
+2016-05-20 11:11:47 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4677  - the counter number is : 1
+2016-05-20 11:11:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4848  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=6&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4848  - the caculator is : 0
+2016-05-20 11:11:47 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4848  - the counter number is : 0
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4849  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=60#a
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4849  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631
+2016-05-20 11:11:47 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 4849  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=7&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:48 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5023  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=7&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5023  - the caculator is : 2
+2016-05-20 11:11:48 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5023  - the counter number is : 2
+2016-05-20 11:11:48 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5059  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=60#a is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5060  - the caculator is : 1
+2016-05-20 11:11:48 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5060  - the counter number is : 1
+2016-05-20 11:11:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5429  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=7&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5429  - the caculator is : 0
+2016-05-20 11:11:48 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5430  - the counter number is : 0
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5431  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5431  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=70#a
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5432  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=8&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:48 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5608  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=8&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5609  - the caculator is : 2
+2016-05-20 11:11:48 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5609  - the counter number is : 2
+2016-05-20 11:11:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5661  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=70#a is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5662  - the caculator is : 1
+2016-05-20 11:11:48 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5662  - the counter number is : 1
+2016-05-20 11:11:48 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5868  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=8&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:48 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5868  - the caculator is : 0
+2016-05-20 11:11:48 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5869  - the counter number is : 0
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5869  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5869  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=80#a
+2016-05-20 11:11:48 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 5869  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=9&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:49 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6122  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=80#a is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6122  - the caculator is : 2
+2016-05-20 11:11:49 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6122  - the counter number is : 2
+2016-05-20 11:11:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6127  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=9&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6128  - the caculator is : 1
+2016-05-20 11:11:49 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6128  - the counter number is : 1
+2016-05-20 11:11:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6341  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=9&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6342  - the caculator is : 0
+2016-05-20 11:11:49 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6342  - the counter number is : 0
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6342  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=90#a
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6342  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6342  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=10&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6510  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=10&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6511  - the caculator is : 2
+2016-05-20 11:11:49 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6511  - the counter number is : 2
+2016-05-20 11:11:49 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6573  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=90#a is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6573  - the caculator is : 1
+2016-05-20 11:11:49 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6574  - the counter number is : 1
+2016-05-20 11:11:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6757  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=10&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6757  - the caculator is : 0
+2016-05-20 11:11:49 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6757  - the counter number is : 0
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6757  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6757  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=100#a
+2016-05-20 11:11:49 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6758  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=11&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:49 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6967  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=11&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6968  - the caculator is : 2
+2016-05-20 11:11:49 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6968  - the counter number is : 2
+2016-05-20 11:11:49 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6976  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=100#a is fetched done.
+2016-05-20 11:11:49 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6976  - the caculator is : 1
+2016-05-20 11:11:49 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 6978  - the counter number is : 1
+2016-05-20 11:11:50 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7231  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=11&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7231  - the caculator is : 0
+2016-05-20 11:11:50 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7231  - the counter number is : 0
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7235  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7235  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=110#a
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7235  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=12&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7457  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=12&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7457  - the caculator is : 2
+2016-05-20 11:11:50 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7458  - the counter number is : 2
+2016-05-20 11:11:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7458  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=110#a is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7459  - the caculator is : 1
+2016-05-20 11:11:50 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7459  - the counter number is : 1
+2016-05-20 11:11:50 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7681  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=12&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7681  - the caculator is : 0
+2016-05-20 11:11:50 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7681  - the counter number is : 0
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7682  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=13&keyWord=&_=1453215195631
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7682  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=120#a
+2016-05-20 11:11:50 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7683  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=13&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:50 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7910  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=120#a is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7910  - the caculator is : 2
+2016-05-20 11:11:50 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7910  - the counter number is : 2
+2016-05-20 11:11:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7949  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=13&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7949  - the caculator is : 1
+2016-05-20 11:11:50 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 7950  - the counter number is : 1
+2016-05-20 11:11:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8201  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=13&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8202  - the caculator is : 0
+2016-05-20 11:11:51 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8202  - the counter number is : 0
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8202  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=130#a
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8202  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=14&keyWord=&_=1453215195631
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8203  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=14&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8396  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=14&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8397  - the caculator is : 2
+2016-05-20 11:11:51 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8397  - the counter number is : 2
+2016-05-20 11:11:51 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8428  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=130#a is fetched done.
+2016-05-20 11:11:51 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8428  - the caculator is : 1
+2016-05-20 11:11:51 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8428  - the counter number is : 1
+2016-05-20 11:11:51 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8663  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=14&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:51 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8663  - the caculator is : 0
+2016-05-20 11:11:51 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8663  - the counter number is : 0
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8664  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=15&keyWord=&_=1453215195631
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8665  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=140#a
+2016-05-20 11:11:51 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8665  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=15&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:51 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8887  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=140#a is fetched done.
+2016-05-20 11:11:51 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8887  - the caculator is : 2
+2016-05-20 11:11:51 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 8888  - the counter number is : 2
+2016-05-20 11:11:52 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9108  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=15&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9109  - the caculator is : 1
+2016-05-20 11:11:52 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9109  - the counter number is : 1
+2016-05-20 11:11:52 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9232  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=15&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9234  - the caculator is : 0
+2016-05-20 11:11:52 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9234  - the counter number is : 0
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9234  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=150#a
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9235  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=16&keyWord=&_=1453215195631
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9235  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=16&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:52 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9409  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=16&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9410  - the caculator is : 2
+2016-05-20 11:11:52 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9410  - the counter number is : 2
+2016-05-20 11:11:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9448  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=150#a is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9448  - the caculator is : 1
+2016-05-20 11:11:52 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9448  - the counter number is : 1
+2016-05-20 11:11:52 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9651  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=16&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9652  - the caculator is : 0
+2016-05-20 11:11:52 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9652  - the counter number is : 0
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9652  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=17&keyWord=&_=1453215195631
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9652  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=160#a
+2016-05-20 11:11:52 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9652  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=17&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:52 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9812  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=17&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9812  - the caculator is : 2
+2016-05-20 11:11:52 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9812  - the counter number is : 2
+2016-05-20 11:11:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9873  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=160#a is fetched done.
+2016-05-20 11:11:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9874  - the caculator is : 1
+2016-05-20 11:11:52 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 9874  - the counter number is : 1
+2016-05-20 11:11:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10236  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=17&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10237  - the caculator is : 0
+2016-05-20 11:11:53 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10237  - the counter number is : 0
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10240  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=18&keyWord=&_=1453215195631
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10241  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=170#a
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10241  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=18&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:53 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10433  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=18&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10434  - the caculator is : 2
+2016-05-20 11:11:53 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10434  - the counter number is : 2
+2016-05-20 11:11:53 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10457  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=170#a is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10458  - the caculator is : 1
+2016-05-20 11:11:53 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10458  - the counter number is : 1
+2016-05-20 11:11:53 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10658  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=18&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10658  - the caculator is : 0
+2016-05-20 11:11:53 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10658  - the counter number is : 0
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10659  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=19&keyWord=&_=1453215195631
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10659  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=180#a
+2016-05-20 11:11:53 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10659  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=19&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:53 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10817  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=19&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10818  - the caculator is : 2
+2016-05-20 11:11:53 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10818  - the counter number is : 2
+2016-05-20 11:11:53 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10868  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=180#a is fetched done.
+2016-05-20 11:11:53 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10868  - the caculator is : 1
+2016-05-20 11:11:53 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 10868  - the counter number is : 1
+2016-05-20 11:11:54 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11057  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=19&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11058  - the caculator is : 0
+2016-05-20 11:11:54 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11058  - the counter number is : 0
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11058  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=20&keyWord=&_=1453215195631
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11058  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=190#a
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11058  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=20&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:54 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11295  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=190#a is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11296  - the caculator is : 2
+2016-05-20 11:11:54 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11296  - the counter number is : 2
+2016-05-20 11:11:54 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11295  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=20&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11297  - the caculator is : 1
+2016-05-20 11:11:54 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11297  - the counter number is : 1
+2016-05-20 11:11:54 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11483  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=20&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11483  - the caculator is : 0
+2016-05-20 11:11:54 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11483  - the counter number is : 0
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11484  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=200#a
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11485  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=21&keyWord=&_=1453215195631
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11485  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=21&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:54 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11636  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=21&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11636  - the caculator is : 2
+2016-05-20 11:11:54 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11636  - the counter number is : 2
+2016-05-20 11:11:54 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11710  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=200#a is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11710  - the caculator is : 1
+2016-05-20 11:11:54 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11710  - the counter number is : 1
+2016-05-20 11:11:54 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11882  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=21&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:54 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11882  - the caculator is : 0
+2016-05-20 11:11:54 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11882  - the counter number is : 0
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11883  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=22&keyWord=&_=1453215195631
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11883  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=210#a
+2016-05-20 11:11:54 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 11883  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=22&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:55 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12074  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=22&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12074  - the caculator is : 2
+2016-05-20 11:11:55 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12074  - the counter number is : 2
+2016-05-20 11:11:55 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12117  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=210#a is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12117  - the caculator is : 1
+2016-05-20 11:11:55 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12117  - the counter number is : 1
+2016-05-20 11:11:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12274  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=22&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12274  - the caculator is : 0
+2016-05-20 11:11:55 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12275  - the counter number is : 0
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12275  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=23&keyWord=&_=1453215195631
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12275  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=220#a
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12275  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=23&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:55 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12497  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=220#a is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12497  - the caculator is : 2
+2016-05-20 11:11:55 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12497  - the counter number is : 2
+2016-05-20 11:11:55 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12528  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=23&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12528  - the caculator is : 1
+2016-05-20 11:11:55 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12528  - the counter number is : 1
+2016-05-20 11:11:55 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12709  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=23&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12710  - the caculator is : 0
+2016-05-20 11:11:55 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12710  - the counter number is : 0
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12710  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=230#a
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12711  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=24&keyWord=&_=1453215195631
+2016-05-20 11:11:55 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12711  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=24&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:55 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12887  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=24&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12887  - the caculator is : 2
+2016-05-20 11:11:55 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12887  - the counter number is : 2
+2016-05-20 11:11:55 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12942  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=230#a is fetched done.
+2016-05-20 11:11:55 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12942  - the caculator is : 1
+2016-05-20 11:11:55 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 12942  - the counter number is : 1
+2016-05-20 11:11:56 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=24&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:56 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - the caculator is : 0
+2016-05-20 11:11:56 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - the counter number is : 0
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=25&keyWord=&_=1453215195631
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=240#a
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13155  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=25&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13322  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=25&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13322  - the caculator is : 2
+2016-05-20 11:11:56 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13322  - the counter number is : 2
+2016-05-20 11:11:56 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13378  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=240#a is fetched done.
+2016-05-20 11:11:56 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13379  - the caculator is : 1
+2016-05-20 11:11:56 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13379  - the counter number is : 1
+2016-05-20 11:11:56 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=25&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:56 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - the caculator is : 0
+2016-05-20 11:11:56 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - the counter number is : 0
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=26&keyWord=&_=1453215195631
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=250#a
+2016-05-20 11:11:56 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13598  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=26&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:56 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13820  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=250#a is fetched done.
+2016-05-20 11:11:56 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13820  - the caculator is : 2
+2016-05-20 11:11:56 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 13821  - the counter number is : 2
+2016-05-20 11:11:57 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14069  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=26&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:57 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14070  - the caculator is : 1
+2016-05-20 11:11:57 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14070  - the counter number is : 1
+2016-05-20 11:11:57 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14735  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=26&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:57 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14735  - the caculator is : 0
+2016-05-20 11:11:57 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14735  - the counter number is : 0
+2016-05-20 11:11:57 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14735  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=260#a
+2016-05-20 11:11:57 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14736  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=27&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:57 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14736  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=27&keyWord=&_=1453215195631
+2016-05-20 11:11:57 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14953  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=27&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:57 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14953  - the caculator is : 2
+2016-05-20 11:11:57 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 14953  - the counter number is : 2
+2016-05-20 11:11:58 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15014  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=260#a is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15015  - the caculator is : 1
+2016-05-20 11:11:58 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15015  - the counter number is : 1
+2016-05-20 11:11:58 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15158  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=27&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15161  - the caculator is : 0
+2016-05-20 11:11:58 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15175  - the counter number is : 0
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15177  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=28&keyWord=&_=1453215195631
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15177  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=270#a
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15177  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=28&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:58 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15354  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=28&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15354  - the caculator is : 2
+2016-05-20 11:11:58 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15354  - the counter number is : 2
+2016-05-20 11:11:58 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15432  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=270#a is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15432  - the caculator is : 1
+2016-05-20 11:11:58 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15432  - the counter number is : 1
+2016-05-20 11:11:58 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15772  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=28&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15772  - the caculator is : 0
+2016-05-20 11:11:58 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15772  - the counter number is : 0
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15773  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=29&keyWord=&_=1453215195631
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15773  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=280#a
+2016-05-20 11:11:58 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15773  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=29&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:58 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15912  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=29&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:58 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15912  - the caculator is : 2
+2016-05-20 11:11:58 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 15912  - the counter number is : 2
+2016-05-20 11:11:59 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16032  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=280#a is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16032  - the caculator is : 1
+2016-05-20 11:11:59 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16033  - the counter number is : 1
+2016-05-20 11:11:59 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=29&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - the caculator is : 0
+2016-05-20 11:11:59 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - the counter number is : 0
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=30&keyWord=&_=1453215195631
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=290#a
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16215  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=30&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:59 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16393  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=30&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16393  - the caculator is : 2
+2016-05-20 11:11:59 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16393  - the counter number is : 2
+2016-05-20 11:11:59 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16474  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=290#a is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16474  - the caculator is : 1
+2016-05-20 11:11:59 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16474  - the counter number is : 1
+2016-05-20 11:11:59 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16660  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=30&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16660  - the caculator is : 0
+2016-05-20 11:11:59 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16660  - the counter number is : 0
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16661  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=31&keyWord=&_=1453215195631
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16661  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=300#a
+2016-05-20 11:11:59 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16661  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=31&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:11:59 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16844  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=31&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16844  - the caculator is : 2
+2016-05-20 11:11:59 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16844  - the counter number is : 2
+2016-05-20 11:11:59 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16931  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=300#a is fetched done.
+2016-05-20 11:11:59 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16931  - the caculator is : 1
+2016-05-20 11:11:59 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 16931  - the counter number is : 1
+2016-05-20 11:12:00 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17134  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=31&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:00 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17134  - the caculator is : 0
+2016-05-20 11:12:00 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17134  - the counter number is : 0
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17135  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=32&keyWord=&_=1453215195631
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17135  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=310#a
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17135  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=32&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:00 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17317  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=32&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:00 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17317  - the caculator is : 2
+2016-05-20 11:12:00 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17317  - the counter number is : 2
+2016-05-20 11:12:00 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17401  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=310#a is fetched done.
+2016-05-20 11:12:00 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17401  - the caculator is : 1
+2016-05-20 11:12:00 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17402  - the counter number is : 1
+2016-05-20 11:12:00 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17786  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=32&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:00 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17786  - the caculator is : 0
+2016-05-20 11:12:00 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17787  - the counter number is : 0
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17787  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=33&keyWord=&_=1453215195631
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17787  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=320#a
+2016-05-20 11:12:00 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17787  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=33&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:00 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17957  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=33&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:00 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17957  - the caculator is : 2
+2016-05-20 11:12:00 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 17957  - the counter number is : 2
+2016-05-20 11:12:01 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18065  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=320#a is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18065  - the caculator is : 1
+2016-05-20 11:12:01 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18065  - the counter number is : 1
+2016-05-20 11:12:01 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18244  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=33&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18244  - the caculator is : 0
+2016-05-20 11:12:01 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18244  - the counter number is : 0
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18244  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=34&keyWord=&_=1453215195631
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18244  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=330#a
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18245  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=34&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:01 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18483  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=34&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18483  - the caculator is : 2
+2016-05-20 11:12:01 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18483  - the counter number is : 2
+2016-05-20 11:12:01 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18543  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=330#a is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18544  - the caculator is : 1
+2016-05-20 11:12:01 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18544  - the counter number is : 1
+2016-05-20 11:12:01 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18711  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=34&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18711  - the caculator is : 0
+2016-05-20 11:12:01 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18711  - the counter number is : 0
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18711  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=35&keyWord=&_=1453215195631
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18712  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=340#a
+2016-05-20 11:12:01 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18712  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=35&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18888  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=35&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18889  - the caculator is : 2
+2016-05-20 11:12:01 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 18889  - the counter number is : 2
+2016-05-20 11:12:02 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19000  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=340#a is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19000  - the caculator is : 1
+2016-05-20 11:12:02 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19000  - the counter number is : 1
+2016-05-20 11:12:02 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19169  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=35&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19169  - the caculator is : 0
+2016-05-20 11:12:02 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19170  - the counter number is : 0
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19170  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=36&keyWord=&_=1453215195631
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19170  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=350#a
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19170  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=36&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:02 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19428  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=36&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19428  - the caculator is : 2
+2016-05-20 11:12:02 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19428  - the counter number is : 2
+2016-05-20 11:12:02 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19442  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=350#a is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19442  - the caculator is : 1
+2016-05-20 11:12:02 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19442  - the counter number is : 1
+2016-05-20 11:12:02 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19593  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=36&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19593  - the caculator is : 0
+2016-05-20 11:12:02 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19593  - the counter number is : 0
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19593  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=37&keyWord=&_=1453215195631
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19593  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=360#a
+2016-05-20 11:12:02 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19594  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=37&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:02 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19829  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=37&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19830  - the caculator is : 2
+2016-05-20 11:12:02 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19833  - the counter number is : 2
+2016-05-20 11:12:02 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19850  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=360#a is fetched done.
+2016-05-20 11:12:02 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19851  - the caculator is : 1
+2016-05-20 11:12:02 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 19851  - the counter number is : 1
+2016-05-20 11:12:03 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20059  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=37&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20059  - the caculator is : 0
+2016-05-20 11:12:03 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20059  - the counter number is : 0
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20060  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=38&keyWord=&_=1453215195631
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20060  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=370#a
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20060  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=38&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:03 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20250  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=38&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20251  - the caculator is : 2
+2016-05-20 11:12:03 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20251  - the counter number is : 2
+2016-05-20 11:12:03 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20307  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=370#a is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20308  - the caculator is : 1
+2016-05-20 11:12:03 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20308  - the counter number is : 1
+2016-05-20 11:12:03 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=38&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - the caculator is : 0
+2016-05-20 11:12:03 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - the counter number is : 0
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=39&keyWord=&_=1453215195631
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=380#a
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20496  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=39&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:03 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20672  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=39&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20673  - the caculator is : 2
+2016-05-20 11:12:03 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20673  - the counter number is : 2
+2016-05-20 11:12:03 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20766  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=380#a is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20766  - the caculator is : 1
+2016-05-20 11:12:03 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20766  - the counter number is : 1
+2016-05-20 11:12:03 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20931  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=39&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:03 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20932  - the caculator is : 0
+2016-05-20 11:12:03 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20932  - the counter number is : 0
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20932  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=40&keyWord=&_=1453215195631
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20932  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=390#a
+2016-05-20 11:12:03 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 20932  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=40&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:04 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21149  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=40&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21149  - the caculator is : 2
+2016-05-20 11:12:04 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21149  - the counter number is : 2
+2016-05-20 11:12:04 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21156  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=390#a is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21156  - the caculator is : 1
+2016-05-20 11:12:04 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21156  - the counter number is : 1
+2016-05-20 11:12:04 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=40&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - the caculator is : 0
+2016-05-20 11:12:04 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - the counter number is : 0
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=41&keyWord=&_=1453215195631
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=400#a
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21394  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=41&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:04 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21581  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=41&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21581  - the caculator is : 2
+2016-05-20 11:12:04 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21581  - the counter number is : 2
+2016-05-20 11:12:04 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21615  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=400#a is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21616  - the caculator is : 1
+2016-05-20 11:12:04 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21616  - the counter number is : 1
+2016-05-20 11:12:04 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21861  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=41&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:04 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21862  - the caculator is : 0
+2016-05-20 11:12:04 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21862  - the counter number is : 0
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21868  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=42&keyWord=&_=1453215195631
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21869  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=410#a
+2016-05-20 11:12:04 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 21869  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=42&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:05 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22089  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=42&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22089  - the caculator is : 2
+2016-05-20 11:12:05 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22089  - the counter number is : 2
+2016-05-20 11:12:05 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22124  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=410#a is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22124  - the caculator is : 1
+2016-05-20 11:12:05 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22124  - the counter number is : 1
+2016-05-20 11:12:05 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22461  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=42&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22461  - the caculator is : 0
+2016-05-20 11:12:05 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22461  - the counter number is : 0
+2016-05-20 11:12:05 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22462  - URLFetcher：start to fetch this url : http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=43&keyWord=&_=1453215195631
+2016-05-20 11:12:05 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22462  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=420#a
+2016-05-20 11:12:05 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22462  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=43&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:05 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22647  - URLFetcher：the url: http://talent.baidu.com/baidu/web/httpservice/getPostList?workPlace=0%2F4%2F7%2F9&recruitType=2&pageSize=10&curPage=43&keyWord=&_=1453215195631 is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22647  - the caculator is : 2
+2016-05-20 11:12:05 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22647  - the counter number is : 2
+2016-05-20 11:12:05 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22748  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=420#a is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22748  - the caculator is : 1
+2016-05-20 11:12:05 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22748  - the counter number is : 1
+2016-05-20 11:12:05 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22889  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=43&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:05 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22889  - the caculator is : 0
+2016-05-20 11:12:05 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22889  - the counter number is : 0
+2016-05-20 11:12:05 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22889  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=430#a
+2016-05-20 11:12:05 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 22889  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=44&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:06 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23153  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=430#a is fetched done.
+2016-05-20 11:12:06 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23154  - the caculator is : 1
+2016-05-20 11:12:06 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23154  - the counter number is : 1
+2016-05-20 11:12:06 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23301  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=44&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:06 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23302  - the caculator is : 0
+2016-05-20 11:12:06 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23302  - the counter number is : 0
+2016-05-20 11:12:06 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23302  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=440#a
+2016-05-20 11:12:06 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23302  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=45&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:06 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23582  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=440#a is fetched done.
+2016-05-20 11:12:06 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23582  - the caculator is : 1
+2016-05-20 11:12:06 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23582  - the counter number is : 1
+2016-05-20 11:12:06 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23700  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=45&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:06 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23700  - the caculator is : 0
+2016-05-20 11:12:06 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23700  - the counter number is : 0
+2016-05-20 11:12:06 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23700  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=450#a
+2016-05-20 11:12:06 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23701  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=46&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:06 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23975  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=450#a is fetched done.
+2016-05-20 11:12:06 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23976  - the caculator is : 1
+2016-05-20 11:12:06 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 23976  - the counter number is : 1
+2016-05-20 11:12:07 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24109  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=46&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:07 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24109  - the caculator is : 0
+2016-05-20 11:12:07 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24109  - the counter number is : 0
+2016-05-20 11:12:07 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24109  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=460#a
+2016-05-20 11:12:07 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24109  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=47&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:07 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24344  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=460#a is fetched done.
+2016-05-20 11:12:07 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24344  - the caculator is : 1
+2016-05-20 11:12:07 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24345  - the counter number is : 1
+2016-05-20 11:12:07 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24524  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=47&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:07 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24524  - the caculator is : 0
+2016-05-20 11:12:07 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24524  - the counter number is : 0
+2016-05-20 11:12:07 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24524  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=470#a
+2016-05-20 11:12:07 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24524  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=48&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:07 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24738  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=470#a is fetched done.
+2016-05-20 11:12:07 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24738  - the caculator is : 1
+2016-05-20 11:12:07 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 24739  - the counter number is : 1
+2016-05-20 11:12:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25005  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=48&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25005  - the caculator is : 0
+2016-05-20 11:12:08 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25006  - the counter number is : 0
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25006  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=480#a
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25006  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=49&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:08 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25274  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=480#a is fetched done.
+2016-05-20 11:12:08 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25274  - the caculator is : 1
+2016-05-20 11:12:08 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25274  - the counter number is : 1
+2016-05-20 11:12:08 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25409  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=49&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:08 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25409  - the caculator is : 0
+2016-05-20 11:12:08 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25409  - the counter number is : 0
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25409  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=490#a
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25409  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=50&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:08 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25684  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=490#a is fetched done.
+2016-05-20 11:12:08 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25684  - the caculator is : 1
+2016-05-20 11:12:08 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25684  - the counter number is : 1
+2016-05-20 11:12:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25885  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=50&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25885  - the caculator is : 0
+2016-05-20 11:12:08 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25886  - the counter number is : 0
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25886  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=500#a
+2016-05-20 11:12:08 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 25886  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=51&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:09 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26122  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=500#a is fetched done.
+2016-05-20 11:12:09 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26122  - the caculator is : 1
+2016-05-20 11:12:09 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26122  - the counter number is : 1
+2016-05-20 11:12:09 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26322  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=51&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:09 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26322  - the caculator is : 0
+2016-05-20 11:12:09 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26322  - the counter number is : 0
+2016-05-20 11:12:09 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26322  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=510#a
+2016-05-20 11:12:09 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26323  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=52&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:09 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26586  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=510#a is fetched done.
+2016-05-20 11:12:09 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26586  - the caculator is : 1
+2016-05-20 11:12:09 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26586  - the counter number is : 1
+2016-05-20 11:12:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26748  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=52&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26748  - the caculator is : 0
+2016-05-20 11:12:09 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26748  - the counter number is : 0
+2016-05-20 11:12:09 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26749  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=520#a
+2016-05-20 11:12:09 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26749  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=53&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:10 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26990  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=520#a is fetched done.
+2016-05-20 11:12:10 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26990  - the caculator is : 1
+2016-05-20 11:12:10 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 26990  - the counter number is : 1
+2016-05-20 11:12:10 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27168  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=53&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:10 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27168  - the caculator is : 0
+2016-05-20 11:12:10 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27168  - the counter number is : 0
+2016-05-20 11:12:10 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27169  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=530#a
+2016-05-20 11:12:10 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27169  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=54&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:10 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27446  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=530#a is fetched done.
+2016-05-20 11:12:10 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27446  - the caculator is : 1
+2016-05-20 11:12:10 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27447  - the counter number is : 1
+2016-05-20 11:12:10 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27654  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=54&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:10 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27654  - the caculator is : 0
+2016-05-20 11:12:10 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27654  - the counter number is : 0
+2016-05-20 11:12:10 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27654  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=540#a
+2016-05-20 11:12:10 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27655  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=55&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:10 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27916  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=540#a is fetched done.
+2016-05-20 11:12:10 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27916  - the caculator is : 1
+2016-05-20 11:12:10 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 27916  - the counter number is : 1
+2016-05-20 11:12:11 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28096  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=55&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:11 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28096  - the caculator is : 0
+2016-05-20 11:12:11 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28097  - the counter number is : 0
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28097  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=550#a
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28097  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=56&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28356  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=550#a is fetched done.
+2016-05-20 11:12:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28356  - the caculator is : 1
+2016-05-20 11:12:11 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28356  - the counter number is : 1
+2016-05-20 11:12:11 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28515  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=56&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:11 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28515  - the caculator is : 0
+2016-05-20 11:12:11 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28515  - the counter number is : 0
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28515  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=560#a
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28515  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=57&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:11 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28745  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=560#a is fetched done.
+2016-05-20 11:12:11 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28746  - the caculator is : 1
+2016-05-20 11:12:11 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28746  - the counter number is : 1
+2016-05-20 11:12:11 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28929  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=57&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:11 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28929  - the caculator is : 0
+2016-05-20 11:12:11 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28929  - the counter number is : 0
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28930  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=570#a
+2016-05-20 11:12:11 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 28930  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=58&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:12 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29152  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=570#a is fetched done.
+2016-05-20 11:12:12 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29152  - the caculator is : 1
+2016-05-20 11:12:12 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29152  - the counter number is : 1
+2016-05-20 11:12:12 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29447  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=58&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:12 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29448  - the caculator is : 0
+2016-05-20 11:12:12 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29448  - the counter number is : 0
+2016-05-20 11:12:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29448  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=580#a
+2016-05-20 11:12:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29448  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=59&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29688  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=580#a is fetched done.
+2016-05-20 11:12:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29688  - the caculator is : 1
+2016-05-20 11:12:12 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29688  - the counter number is : 1
+2016-05-20 11:12:12 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29858  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=59&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:12 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29858  - the caculator is : 0
+2016-05-20 11:12:12 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29858  - the counter number is : 0
+2016-05-20 11:12:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29858  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=590#a
+2016-05-20 11:12:12 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 29858  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=60&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30147  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=590#a is fetched done.
+2016-05-20 11:12:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30147  - the caculator is : 1
+2016-05-20 11:12:13 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30147  - the counter number is : 1
+2016-05-20 11:12:13 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30281  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=60&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:13 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30282  - the caculator is : 0
+2016-05-20 11:12:13 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30282  - the counter number is : 0
+2016-05-20 11:12:13 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30282  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=600#a
+2016-05-20 11:12:13 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30282  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=61&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:13 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30517  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=600#a is fetched done.
+2016-05-20 11:12:13 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30517  - the caculator is : 1
+2016-05-20 11:12:13 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30517  - the counter number is : 1
+2016-05-20 11:12:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30711  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=61&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30712  - the caculator is : 0
+2016-05-20 11:12:13 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30712  - the counter number is : 0
+2016-05-20 11:12:13 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30712  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=610#a
+2016-05-20 11:12:13 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30712  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=62&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30972  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=610#a is fetched done.
+2016-05-20 11:12:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30973  - the caculator is : 1
+2016-05-20 11:12:13 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 30973  - the counter number is : 1
+2016-05-20 11:12:14 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31194  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=62&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:14 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31194  - the caculator is : 0
+2016-05-20 11:12:14 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31194  - the counter number is : 0
+2016-05-20 11:12:14 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31194  - URLFetcher：start to fetch this url : http://hr.tencent.com/position.php?lid=0&tid=87&start=620#a
+2016-05-20 11:12:14 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31195  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=63&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31403  - URLFetcher：the url: http://hr.tencent.com/position.php?lid=0&tid=87&start=620#a is fetched done.
+2016-05-20 11:12:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31403  - the caculator is : 1
+2016-05-20 11:12:14 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31403  - the counter number is : 1
+2016-05-20 11:12:14 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31619  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=63&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:14 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31619  - the caculator is : 0
+2016-05-20 11:12:14 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31620  - the counter number is : 0
+2016-05-20 11:12:14 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 31620  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=64&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:15 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32033  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=64&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:15 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32033  - the caculator is : 0
+2016-05-20 11:12:15 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32033  - the counter number is : 0
+2016-05-20 11:12:15 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32034  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=65&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:15 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32451  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=65&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:15 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32451  - the caculator is : 0
+2016-05-20 11:12:15 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32451  - the counter number is : 0
+2016-05-20 11:12:15 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32451  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=66&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:15 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32862  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=66&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:15 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32862  - the caculator is : 0
+2016-05-20 11:12:15 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32862  - the counter number is : 0
+2016-05-20 11:12:15 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 32862  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=67&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:16 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 33301  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=67&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:16 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 33301  - the caculator is : 0
+2016-05-20 11:12:16 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 33302  - the counter number is : 0
+2016-05-20 11:12:16 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 33302  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=68&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:17 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34005  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=68&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:17 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34005  - the caculator is : 0
+2016-05-20 11:12:17 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34005  - the counter number is : 0
+2016-05-20 11:12:17 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34005  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=69&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:17 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34471  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=69&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:17 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34471  - the caculator is : 0
+2016-05-20 11:12:17 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34471  - the counter number is : 0
+2016-05-20 11:12:17 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34471  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=70&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:17 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34870  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=70&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:17 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34870  - the caculator is : 0
+2016-05-20 11:12:17 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34871  - the counter number is : 0
+2016-05-20 11:12:17 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 34871  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=71&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:18 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35298  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=71&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:18 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35298  - the caculator is : 0
+2016-05-20 11:12:18 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35298  - the counter number is : 0
+2016-05-20 11:12:18 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35299  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=72&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:18 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35702  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=72&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:18 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35702  - the caculator is : 0
+2016-05-20 11:12:18 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35702  - the counter number is : 0
+2016-05-20 11:12:18 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 35703  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=73&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:19 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36134  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=73&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:19 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36134  - the caculator is : 0
+2016-05-20 11:12:19 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36134  - the counter number is : 0
+2016-05-20 11:12:19 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36135  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=74&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:19 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36531  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=74&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:19 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36531  - the caculator is : 0
+2016-05-20 11:12:19 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36531  - the counter number is : 0
+2016-05-20 11:12:19 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36531  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=75&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:19 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36960  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=75&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:19 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36961  - the caculator is : 0
+2016-05-20 11:12:19 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36961  - the counter number is : 0
+2016-05-20 11:12:19 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 36961  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=76&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:20 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37390  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=76&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:20 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37390  - the caculator is : 0
+2016-05-20 11:12:20 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37390  - the counter number is : 0
+2016-05-20 11:12:20 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37390  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=77&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37777  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=77&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37777  - the caculator is : 0
+2016-05-20 11:12:20 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37777  - the counter number is : 0
+2016-05-20 11:12:20 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 37777  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=78&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:21 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38219  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=78&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:21 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38219  - the caculator is : 0
+2016-05-20 11:12:21 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38219  - the counter number is : 0
+2016-05-20 11:12:21 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38220  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=79&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:21 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38646  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=79&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:21 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38646  - the caculator is : 0
+2016-05-20 11:12:21 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38646  - the counter number is : 0
+2016-05-20 11:12:21 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 38646  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=80&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:22 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39032  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=80&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:22 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39033  - the caculator is : 0
+2016-05-20 11:12:22 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39033  - the counter number is : 0
+2016-05-20 11:12:22 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39033  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=81&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:22 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39445  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=81&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:22 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39445  - the caculator is : 0
+2016-05-20 11:12:22 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39445  - the counter number is : 0
+2016-05-20 11:12:22 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39445  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=82&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:22 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39833  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=82&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:22 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39833  - the caculator is : 0
+2016-05-20 11:12:22 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39833  - the counter number is : 0
+2016-05-20 11:12:22 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 39833  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=83&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:23 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40258  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=83&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:23 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40258  - the caculator is : 0
+2016-05-20 11:12:23 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40258  - the counter number is : 0
+2016-05-20 11:12:23 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40258  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=84&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:23 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40667  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=84&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:23 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40668  - the caculator is : 0
+2016-05-20 11:12:23 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40668  - the counter number is : 0
+2016-05-20 11:12:23 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 40668  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=85&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41081  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=85&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41081  - the caculator is : 0
+2016-05-20 11:12:24 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41081  - the counter number is : 0
+2016-05-20 11:12:24 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41081  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=86&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:24 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41559  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=86&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:24 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41559  - the caculator is : 0
+2016-05-20 11:12:24 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41559  - the counter number is : 0
+2016-05-20 11:12:24 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 41559  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=87&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42022  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=87&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42022  - the caculator is : 0
+2016-05-20 11:12:25 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42023  - the counter number is : 0
+2016-05-20 11:12:25 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42023  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=88&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:25 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42481  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=88&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:25 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42481  - the caculator is : 0
+2016-05-20 11:12:25 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42481  - the counter number is : 0
+2016-05-20 11:12:25 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42481  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=89&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:25 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42879  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=89&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:25 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42879  - the caculator is : 0
+2016-05-20 11:12:25 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42879  - the counter number is : 0
+2016-05-20 11:12:25 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 42879  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=90&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:26 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43297  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=90&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:26 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43297  - the caculator is : 0
+2016-05-20 11:12:26 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43297  - the counter number is : 0
+2016-05-20 11:12:26 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43297  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=91&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:26 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43716  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=91&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:26 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43716  - the caculator is : 0
+2016-05-20 11:12:26 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43716  - the counter number is : 0
+2016-05-20 11:12:26 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 43716  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=92&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:27 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44095  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=92&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:27 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44095  - the caculator is : 0
+2016-05-20 11:12:27 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44095  - the counter number is : 0
+2016-05-20 11:12:27 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44095  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=93&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44532  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=93&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44532  - the caculator is : 0
+2016-05-20 11:12:27 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44532  - the counter number is : 0
+2016-05-20 11:12:27 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44533  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=94&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:27 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44938  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=94&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:27 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44938  - the caculator is : 0
+2016-05-20 11:12:27 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44938  - the counter number is : 0
+2016-05-20 11:12:27 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 44938  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=95&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:28 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45379  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=95&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:28 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45379  - the caculator is : 0
+2016-05-20 11:12:28 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45379  - the counter number is : 0
+2016-05-20 11:12:28 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45380  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=96&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:28 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45851  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=96&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:28 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45851  - the caculator is : 0
+2016-05-20 11:12:28 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45851  - the counter number is : 0
+2016-05-20 11:12:28 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 45851  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=97&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:29 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46276  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=97&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:29 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46276  - the caculator is : 0
+2016-05-20 11:12:29 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46276  - the counter number is : 0
+2016-05-20 11:12:29 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46276  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=98&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46682  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=98&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46683  - the caculator is : 0
+2016-05-20 11:12:29 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46683  - the counter number is : 0
+2016-05-20 11:12:29 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 46683  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=99&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47073  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=99&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47073  - the caculator is : 0
+2016-05-20 11:12:30 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47073  - the counter number is : 0
+2016-05-20 11:12:30 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47074  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=100&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47507  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=100&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47507  - the caculator is : 0
+2016-05-20 11:12:30 [pool-1-thread-8] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47507  - the counter number is : 0
+2016-05-20 11:12:30 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 47507  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=101&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:31 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48004  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=101&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:31 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48004  - the caculator is : 0
+2016-05-20 11:12:31 [pool-1-thread-4] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48004  - the counter number is : 0
+2016-05-20 11:12:31 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48004  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=102&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48415  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=102&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48416  - the caculator is : 0
+2016-05-20 11:12:31 [pool-1-thread-10] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48416  - the counter number is : 0
+2016-05-20 11:12:31 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48416  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=103&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:31 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48826  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=103&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:31 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48826  - the caculator is : 0
+2016-05-20 11:12:31 [pool-1-thread-3] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48826  - the counter number is : 0
+2016-05-20 11:12:31 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 48826  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=104&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49225  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=104&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49225  - the caculator is : 0
+2016-05-20 11:12:32 [pool-1-thread-6] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49225  - the counter number is : 0
+2016-05-20 11:12:32 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49225  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=105&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49686  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=105&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49686  - the caculator is : 0
+2016-05-20 11:12:32 [pool-1-thread-1] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49686  - the counter number is : 0
+2016-05-20 11:12:32 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 49686  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=106&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:33 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50081  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=106&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:33 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50081  - the caculator is : 0
+2016-05-20 11:12:33 [pool-1-thread-9] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50081  - the counter number is : 0
+2016-05-20 11:12:33 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50082  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=107&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:33 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50505  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=107&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:33 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50505  - the caculator is : 0
+2016-05-20 11:12:33 [pool-1-thread-2] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50505  - the counter number is : 0
+2016-05-20 11:12:33 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50505  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=108&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:33 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50931  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=108&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:33 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50931  - the caculator is : 0
+2016-05-20 11:12:33 [pool-1-thread-5] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50932  - the counter number is : 0
+2016-05-20 11:12:33 [Thread-112] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 50932  - URLFetcher：start to fetch this url : https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=109&first=%E6%8A%80%E6%9C%AF%E7%B1%BB
+2016-05-20 11:12:34 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 51263  - URLFetcher：the url: https://job.alibaba.com/zhaopin/socialPositionList/doList.json?pageSize=10&pageIndex=109&first=%E6%8A%80%E6%9C%AF%E7%B1%BB is fetched done.
+2016-05-20 11:12:34 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 51263  - the caculator is : 0
+2016-05-20 11:12:34 [pool-1-thread-7] INFO  com.boliao.sunshine.fetchers.URLFetcher(line-42) 51263  - the counter number is : 0
+2016-05-20 11:12:54 [main] ERROR ERROR(line-83) 71364  - itsunshine招聘信息数据，上传失败
+org.apache.http.conn.HttpHostConnectException: Connection to http://localhost:8989 refused
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:127)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:147)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:108)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:415)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:641)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:576)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:554)
+	at com.boliao.sunshine.upload.SendFile.uploadFile(SendFile.java:70)
+	at com.boliao.sunshine.main.SpiderLauncher.main(SpiderLauncher.java:255)
+Caused by: java.net.ConnectException: Connection refused
+	at java.net.PlainSocketImpl.socketConnect(Native Method)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:339)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:200)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:182)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:579)
+	at org.apache.http.conn.scheme.PlainSocketFactory.connectSocket(PlainSocketFactory.java:123)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.openConnection(DefaultClientConnectionOperator.java:123)
+	... 8 more

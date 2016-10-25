@@ -298,7 +298,7 @@ public class ContentFetcher {
 			String filePath = SpiderContext.getJobDemandFile();
 			FileUtils.createFile(filePath);
 			jsonStr = jsonStr + "\n";
-			FileUtils.saveToLocal(jsonStr.getBytes(), filePath, true);
+			FileUtils.saveToLocal(jsonStr.getBytes("GBK"), filePath, true);
 		} catch (Exception e) {
 			LogUtil.error(errorLogger, "将招聘要求内容，落地时，出错：" + jsonStr, e);
 		}
